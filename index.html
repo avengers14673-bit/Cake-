@@ -2,59 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <title>Vijaya Cake Palace & Bakery | Hubli</title>
+  <meta name="description" content="Vijaya Cake Palace & Bakery, Siddheshwar Nagar, Unkal Cross, Hubli. Cakes, pastries and bakery items made for every special moment.">
 
-  <meta
-    name="description"
-    content="Vijaya Cake Palace & Bakery - Cakes, pastries, snacks, bakery items and party hall at Siddheshwar Nagar, Unkal Cross, Hubli."
-  >
-
-  <title>Vijaya Cake Palace & Bakery</title>
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-
-    /* ================================
-       ROOT
-    ================================= */
-
     :root {
-      --brown: #2b160f;
-      --brown-dark: #1b0d09;
-      --brown-light: #4a281d;
-
-      --cream: #f8f1e5;
-      --cream-light: #fffaf2;
-
-      --gold: #c49a48;
-      --gold-light: #e3c47c;
-
-      --text: #33231c;
-      --muted: #79675d;
-
+      --brown-950: #1c0d08;
+      --brown-900: #29130c;
+      --brown-800: #3a1c12;
+      --brown-700: #4a2417;
+      --cream: #f8f0e3;
+      --cream-2: #fffaf2;
+      --gold: #c89b45;
+      --gold-light: #e4c77d;
+      --text: #332019;
+      --muted: #806d61;
       --white: #ffffff;
-
-      --shadow: 0 18px 50px rgba(43, 22, 15, 0.12);
-
-      --radius: 22px;
+      --border: rgba(74, 36, 23, 0.12);
+      --shadow: 0 18px 50px rgba(44, 21, 12, 0.10);
     }
-
-
-    /* ================================
-       RESET
-    ================================= */
 
     * {
       margin: 0;
@@ -68,93 +41,47 @@
 
     body {
       font-family: "DM Sans", sans-serif;
-      background: var(--cream-light);
+      background: var(--cream-2);
       color: var(--text);
-      line-height: 1.6;
       overflow-x: hidden;
     }
 
     img {
-      max-width: 100%;
+      width: 100%;
       display: block;
     }
 
     a {
-      color: inherit;
       text-decoration: none;
+      color: inherit;
     }
 
     button,
     input,
-    textarea,
-    select {
+    textarea {
       font: inherit;
     }
 
-
-    /* ================================
-       COMMON
-    ================================= */
-
     .container {
-      width: min(1120px, calc(100% - 32px));
+      width: min(1120px, calc(100% - 36px));
       margin: auto;
     }
 
-    .section {
-      padding: 90px 0;
-    }
-
-    .section-label {
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 12px;
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
-
-    .section-title {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(34px, 5vw, 54px);
-      line-height: 1.1;
-      color: var(--brown);
-      margin-bottom: 18px;
-    }
-
-    .section-text {
-      color: var(--muted);
-      max-width: 650px;
-    }
-
-    .gold-line {
-      width: 60px;
-      height: 2px;
-      background: var(--gold);
-      margin: 22px 0;
-    }
-
-
-    /* ================================
-       HEADER
-    ================================= */
+    /* ================= HEADER ================= */
 
     header {
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
+      right: 0;
       z-index: 1000;
-
-      background: rgba(43, 22, 15, 0.94);
-      backdrop-filter: blur(12px);
-
-      border-bottom: 1px solid rgba(227, 196, 124, 0.18);
+      background: rgba(28, 13, 8, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(228, 199, 125, 0.12);
     }
 
     .nav {
-      min-height: 76px;
-
+      min-height: 72px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -162,100 +89,57 @@
     }
 
     .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
       color: var(--cream);
+      font-family: "Cormorant Garamond", serif;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 0.9;
     }
 
-    .logo-mark {
-      width: 42px;
-      height: 42px;
-
-      display: grid;
-      place-items: center;
-
-      border: 1px solid var(--gold);
-      border-radius: 50%;
-
-      color: var(--gold-light);
-      font-family: "Playfair Display", serif;
-      font-size: 20px;
-    }
-
-    .logo-text strong {
-      display: block;
-      font-family: "Playfair Display", serif;
-      font-size: 17px;
-      line-height: 1.1;
-    }
-
-    .logo-text span {
+    .logo span {
       display: block;
       color: var(--gold-light);
-      font-size: 9px;
-      letter-spacing: 2px;
+      font-family: "DM Sans", sans-serif;
+      font-size: 8px;
+      letter-spacing: 2.5px;
       text-transform: uppercase;
-      margin-top: 3px;
+      margin-top: 5px;
     }
 
-    nav {
+    .nav-links {
       display: flex;
       align-items: center;
-      gap: 26px;
+      gap: 25px;
+      color: #f7ead8;
+      font-size: 13px;
     }
 
-    nav a {
-      color: #fff8ee;
-      font-size: 14px;
-      transition: 0.3s;
+    .nav-links a {
+      transition: color .25s ease;
     }
 
-    nav a:hover {
+    .nav-links a:hover {
       color: var(--gold-light);
     }
 
-    .nav-button {
-      border: 1px solid var(--gold);
-      padding: 10px 16px;
-      border-radius: 30px;
-      color: var(--gold-light);
+    .nav-order {
+      background: var(--gold);
+      color: var(--brown-950);
+      padding: 11px 17px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 12px;
     }
 
-    .menu-toggle {
-      display: none;
-      border: 0;
-      background: transparent;
-      color: white;
-      font-size: 28px;
-      cursor: pointer;
-    }
-
-
-    /* ================================
-       HERO
-    ================================= */
+    /* ================= HERO ================= */
 
     .hero {
-      min-height: 100vh;
+      min-height: 720px;
+      padding: 125px 0 70px;
       background:
-        radial-gradient(
-          circle at 80% 20%,
-          rgba(196, 154, 72, 0.18),
-          transparent 30%
-        ),
-        linear-gradient(
-          135deg,
-          var(--brown-dark),
-          var(--brown)
-        );
-
+        radial-gradient(circle at 75% 30%, rgba(200,155,69,.18), transparent 30%),
+        linear-gradient(135deg, var(--brown-950), var(--brown-800));
       color: white;
-
-      display: flex;
-      align-items: center;
-
-      padding-top: 90px;
       position: relative;
       overflow: hidden;
     }
@@ -263,94 +147,72 @@
     .hero::before {
       content: "";
       position: absolute;
-
-      width: 450px;
-      height: 450px;
-
-      border: 1px solid rgba(196, 154, 72, 0.16);
+      width: 420px;
+      height: 420px;
+      border: 1px solid rgba(228,199,125,.13);
       border-radius: 50%;
-
-      right: -170px;
-      top: 120px;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-
-      width: 260px;
-      height: 260px;
-
-      border: 1px solid rgba(196, 154, 72, 0.12);
-      border-radius: 50%;
-
-      right: -70px;
-      top: 215px;
+      right: -180px;
+      top: 100px;
     }
 
     .hero-grid {
+      min-height: 525px;
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+      grid-template-columns: 1fr 0.9fr;
       align-items: center;
-      gap: 50px;
-      position: relative;
-      z-index: 2;
+      gap: 55px;
     }
 
-    .hero-kicker {
+    .eyebrow {
       color: var(--gold-light);
-      font-size: 13px;
       text-transform: uppercase;
-      letter-spacing: 4px;
+      letter-spacing: 3px;
+      font-size: 11px;
       font-weight: 700;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .hero h1 {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(48px, 7vw, 82px);
-      line-height: 0.98;
-      max-width: 720px;
-      margin-bottom: 24px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(48px, 7vw, 76px);
+      line-height: .9;
+      font-weight: 600;
+      max-width: 600px;
     }
 
     .hero h1 span {
       color: var(--gold-light);
     }
 
-    .hero-description {
-      color: #eadfd5;
-      max-width: 580px;
-      font-size: 17px;
-      margin-bottom: 30px;
+    .hero-text {
+      color: #eadbca;
+      max-width: 500px;
+      margin: 25px 0 30px;
+      line-height: 1.75;
+      font-size: 15px;
     }
 
     .hero-buttons {
       display: flex;
-      flex-wrap: wrap;
       gap: 12px;
+      flex-wrap: wrap;
     }
 
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-
       min-height: 48px;
       padding: 0 22px;
-
-      border-radius: 30px;
-
+      border-radius: 50px;
+      font-size: 13px;
       font-weight: 700;
-      font-size: 14px;
-
-      cursor: pointer;
-      transition: 0.3s;
+      transition: .25s ease;
     }
 
     .btn-gold {
       background: var(--gold);
-      color: var(--brown-dark);
+      color: var(--brown-950);
     }
 
     .btn-gold:hover {
@@ -359,694 +221,337 @@
     }
 
     .btn-outline {
-      border: 1px solid rgba(255,255,255,0.45);
+      border: 1px solid rgba(255,255,255,.28);
       color: white;
     }
 
     .btn-outline:hover {
-      border-color: var(--gold);
+      border-color: var(--gold-light);
       color: var(--gold-light);
     }
 
-    .hero-note {
-      margin-top: 28px;
-      font-size: 12px;
-      color: #bfaea2;
-    }
-
-
-    /* ================================
-       CAKE ART
-    ================================= */
-
-    .cake-display {
-      min-height: 450px;
-
-      display: grid;
-      place-items: center;
-
+    .hero-photo {
       position: relative;
     }
 
-    .cake-glow {
-      position: absolute;
-
-      width: 330px;
-      height: 330px;
-
-      background: rgba(196, 154, 72, 0.12);
-      filter: blur(20px);
-      border-radius: 50%;
-    }
-
-    .cake {
-      width: min(340px, 80vw);
-      position: relative;
-      z-index: 2;
-    }
-
-    .cake-top {
-      width: 82%;
-      height: 105px;
-
-      margin: auto;
-
-      background:
-        linear-gradient(
-          145deg,
-          #fff7e9,
-          #e8cdb0
-        );
-
-      border-radius: 50% 50% 38% 38%;
-
-      border: 4px solid #d8b486;
-
-      position: relative;
-      z-index: 3;
-
-      box-shadow:
-        0 10px 25px rgba(0,0,0,0.2);
-    }
-
-    .cake-top::before {
-      content: "VIJAYA";
-
-      position: absolute;
-
-      left: 50%;
-      top: 42%;
-
-      transform: translate(-50%, -50%);
-
-      font-family: "Playfair Display", serif;
-
-      font-size: 22px;
-      font-weight: 700;
-
-      color: var(--brown);
-      letter-spacing: 2px;
-    }
-
-    .cake-layer {
-      width: 82%;
-      height: 105px;
-
-      margin: -12px auto 0;
-
-      background:
-        linear-gradient(
-          90deg,
-          #6e3825,
-          #9c5b38,
-          #6e3825
-        );
-
-      border-radius: 12px 12px 25px 25px;
-
-      border: 3px solid #522719;
-
-      position: relative;
-      z-index: 2;
-    }
-
-    .cake-layer::before {
+    .hero-photo::before {
       content: "";
-
       position: absolute;
-
-      left: 5%;
-      right: 5%;
-      top: -12px;
-
-      height: 28px;
-
-      background: #fff1dc;
-
-      border-radius: 50%;
+      inset: -16px;
+      border: 1px solid rgba(228,199,125,.25);
+      border-radius: 180px 180px 20px 20px;
+      transform: rotate(3deg);
     }
 
-    .cake-bottom {
-      width: 90%;
-      height: 100px;
-
-      margin: -8px auto 0;
-
-      background:
-        linear-gradient(
-          90deg,
-          #4c2418,
-          #7b4029,
-          #4c2418
-        );
-
-      border-radius: 15px 15px 25px 25px;
-
-      border: 3px solid #3c1b12;
+    .hero-photo img {
+      position: relative;
+      height: 470px;
+      object-fit: cover;
+      border-radius: 170px 170px 18px 18px;
+      border: 5px solid rgba(255,255,255,.08);
+      box-shadow: 0 30px 70px rgba(0,0,0,.3);
     }
 
-    .cherry {
-      position: absolute;
+    /* ================= SECTION ================= */
 
-      width: 17px;
-      height: 17px;
-
-      background: #9d2930;
-      border-radius: 50%;
-
-      box-shadow:
-        35px 8px 0 #9d2930,
-        -38px 9px 0 #9d2930;
-    }
-
-    .cherry.one {
-      top: 16px;
-      left: 46%;
-    }
-
-
-    /* ================================
-       TRUST STRIP
-    ================================= */
-
-    .trust {
-      background: var(--cream);
-      border-bottom: 1px solid #eadcca;
-    }
-
-    .trust-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1px;
-
-      background: #dfcfbd;
-    }
-
-    .trust-item {
-      background: var(--cream);
-      padding: 25px 15px;
-      text-align: center;
-    }
-
-    .trust-item strong {
-      display: block;
-      font-family: "Playfair Display", serif;
-      font-size: 20px;
-      color: var(--brown);
-    }
-
-    .trust-item span {
-      display: block;
-      font-size: 12px;
-      color: var(--muted);
-      margin-top: 4px;
-    }
-
-
-    /* ================================
-       MENU
-    ================================= */
-
-    .menu-section {
-      background: var(--cream-light);
+    section {
+      padding: 90px 0;
     }
 
     .section-heading {
       text-align: center;
-      margin-bottom: 45px;
+      max-width: 650px;
+      margin: 0 auto 48px;
     }
 
-    .section-heading .section-text {
-      margin: auto;
+    .section-heading .eyebrow {
+      color: var(--gold);
+      margin-bottom: 10px;
     }
 
-    .menu-grid {
+    .section-heading h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(40px, 5vw, 58px);
+      line-height: .95;
+      color: var(--brown-900);
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    /* ================= CATEGORIES ================= */
+
+    .category-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
 
-    .menu-card {
-      background: white;
-      border: 1px solid #eadfd4;
-      border-radius: var(--radius);
-      padding: 30px 22px;
-      box-shadow: 0 8px 30px rgba(43, 22, 15, 0.05);
-      transition: 0.3s;
+    .category-card {
       position: relative;
+      min-height: 360px;
       overflow: hidden;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      background: var(--brown-900);
     }
 
-    .menu-card:hover {
-      transform: translateY(-6px);
+    .category-card img {
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+      transition: transform .5s ease;
+    }
+
+    .category-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .category-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(transparent 35%, rgba(28,13,8,.92));
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 27px;
+      color: white;
+    }
+
+    .category-overlay h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 32px;
+      margin-bottom: 5px;
+    }
+
+    .category-overlay p {
+      color: #eadbca;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    /* ================= PRODUCTS ================= */
+
+    .products {
+      background: var(--cream);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 35px rgba(44,21,12,.06);
+      transition: .3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
       box-shadow: var(--shadow);
     }
 
-    .menu-icon {
-      width: 58px;
-      height: 58px;
-
-      display: grid;
-      place-items: center;
-
-      border-radius: 18px;
-
-      background: var(--cream);
-      color: var(--brown);
-
-      font-size: 28px;
-
-      margin-bottom: 20px;
+    .product-image {
+      height: 225px;
+      overflow: hidden;
+      background: #ead8c7;
     }
 
-    .menu-card h3 {
-      font-family: "Playfair Display", serif;
-      font-size: 23px;
-      color: var(--brown);
-      margin-bottom: 8px;
+    .product-image img {
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease;
     }
 
-    .menu-card p {
+    .product-card:hover .product-image img {
+      transform: scale(1.04);
+    }
+
+    .product-content {
+      padding: 20px;
+    }
+
+    .product-content h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 27px;
+      color: var(--brown-900);
+      margin-bottom: 6px;
+    }
+
+    .product-content p {
       color: var(--muted);
-      font-size: 14px;
+      font-size: 12px;
+      line-height: 1.6;
+      min-height: 40px;
     }
 
-    .menu-card .card-line {
-      width: 35px;
-      height: 2px;
-      background: var(--gold);
-      margin-top: 18px;
+    .product-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 17px;
+      padding-top: 15px;
+      border-top: 1px solid var(--border);
     }
 
+    .product-tag {
+      color: var(--gold);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-weight: 700;
+    }
 
-    /* ================================
-       ABOUT
-    ================================= */
+    .small-btn {
+      padding: 9px 13px;
+      border-radius: 30px;
+      background: var(--brown-900);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    /* ================= ABOUT ================= */
 
     .about {
-      background: var(--brown);
+      background: var(--brown-900);
       color: white;
     }
 
     .about-grid {
       display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
+      grid-template-columns: .9fr 1.1fr;
       gap: 60px;
       align-items: center;
     }
 
-    .about-visual {
-      min-height: 440px;
-
-      background:
-        linear-gradient(
-          145deg,
-          #4b291e,
-          #24110b
-        );
-
-      border: 1px solid rgba(196,154,72,0.35);
-
-      border-radius: 30px;
-
-      display: grid;
-      place-items: center;
-
-      position: relative;
-      overflow: hidden;
-    }
-
-    .about-visual::before,
-    .about-visual::after {
-      content: "";
-      position: absolute;
-
-      border: 1px solid rgba(196,154,72,0.25);
-      border-radius: 50%;
-    }
-
-    .about-visual::before {
-      width: 280px;
-      height: 280px;
-    }
-
-    .about-visual::after {
-      width: 430px;
-      height: 430px;
-    }
-
-    .about-badge {
-      position: relative;
-      z-index: 2;
-
-      width: 180px;
-      height: 180px;
-
-      border: 1px solid var(--gold);
-
-      border-radius: 50%;
-
-      display: grid;
-      place-items: center;
-
-      text-align: center;
-
-      padding: 20px;
-    }
-
-    .about-badge strong {
-      font-family: "Playfair Display", serif;
-      color: var(--gold-light);
-      font-size: 24px;
-    }
-
-    .about-badge span {
-      display: block;
-      font-size: 10px;
-      letter-spacing: 2px;
-      color: #e8dbce;
-      text-transform: uppercase;
-      margin-top: 5px;
-    }
-
-    .about .section-label {
-      color: var(--gold-light);
-    }
-
-    .about .section-title {
-      color: white;
-    }
-
-    .about .section-text {
-      color: #d8c8bd;
-    }
-
-    .about-points {
-      margin-top: 28px;
-
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
-
-    .about-point {
-      border-left: 2px solid var(--gold);
-      padding-left: 15px;
-    }
-
-    .about-point strong {
-      display: block;
-      color: white;
-      font-size: 15px;
-      margin-bottom: 4px;
-    }
-
-    .about-point span {
-      color: #bca99e;
-      font-size: 12px;
-    }
-
-
-    /* ================================
-       PARTY HALL
-    ================================= */
-
-    .party {
-      background: var(--cream);
-    }
-
-    .party-box {
-      background:
-        linear-gradient(
-          135deg,
-          var(--brown),
-          #4b281c
-        );
-
-      border-radius: 30px;
-
-      padding: 55px;
-
-      color: white;
-
-      display: grid;
-      grid-template-columns: 1fr 0.8fr;
-
-      gap: 45px;
-
-      position: relative;
-      overflow: hidden;
-    }
-
-    .party-box::after {
-      content: "CELEBRATE";
-
-      position: absolute;
-
-      right: -35px;
-      bottom: 20px;
-
-      font-family: "Playfair Display", serif;
-
-      font-size: 90px;
-
-      color: rgba(255,255,255,0.035);
-
-      transform: rotate(-10deg);
-    }
-
-    .party .section-label {
-      color: var(--gold-light);
-    }
-
-    .party h2 {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(35px, 5vw, 55px);
-      line-height: 1.05;
-      margin-bottom: 18px;
-    }
-
-    .party p {
-      color: #dfd1c7;
-      max-width: 600px;
-    }
-
-    .party-features {
-      margin-top: 28px;
-
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-
-      gap: 12px;
-    }
-
-    .party-feature {
-      border: 1px solid rgba(255,255,255,0.15);
-      padding: 15px;
-      border-radius: 14px;
-      font-size: 13px;
-      color: #eaded6;
-    }
-
-    .party-feature strong {
-      display: block;
-      color: var(--gold-light);
-      margin-bottom: 3px;
-    }
-
-    .party-card {
-      min-height: 260px;
-
-      border: 1px solid rgba(196,154,72,0.5);
-      border-radius: 24px;
-
-      display: grid;
-      place-items: center;
-
-      text-align: center;
-
-      position: relative;
-      z-index: 2;
-
-      padding: 25px;
-    }
-
-    .party-card .party-icon {
-      font-size: 58px;
-      margin-bottom: 12px;
-    }
-
-    .party-card h3 {
-      font-family: "Playfair Display", serif;
-      font-size: 28px;
-      color: var(--gold-light);
-    }
-
-
-    /* ================================
-       GALLERY PLACEHOLDERS
-    ================================= */
-
-    .gallery {
-      background: var(--cream-light);
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: 1.3fr 1fr 1fr;
-      grid-template-rows: 220px 220px;
-      gap: 14px;
-    }
-
-    .gallery-item {
+    .about-image {
       border-radius: 20px;
       overflow: hidden;
-
-      background:
-        radial-gradient(
-          circle at center,
-          rgba(196,154,72,0.22),
-          transparent 55%
-        ),
-        linear-gradient(
-          145deg,
-          #4a281d,
-          #21100b
-        );
-
-      border: 1px solid #d9c4ad;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      text-align: center;
-
-      padding: 20px;
-
-      color: #f7eadb;
-
-      position: relative;
+      border: 1px solid rgba(228,199,125,.2);
     }
 
-    .gallery-item:first-child {
-      grid-row: span 2;
+    .about-image img {
+      height: 450px;
+      object-fit: cover;
     }
 
-    .gallery-content strong {
-      display: block;
-      font-family: "Playfair Display", serif;
-      font-size: 25px;
+    .about .eyebrow {
       color: var(--gold-light);
-      margin-bottom: 5px;
     }
 
-    .gallery-content span {
-      font-size: 12px;
-      color: #d9c8bb;
-    }
-
-
-    /* ================================
-       CONTACT
-    ================================= */
-
-    .contact {
-      background: var(--cream);
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
-      gap: 35px;
-      align-items: start;
-    }
-
-    .contact-info {
-      background: var(--brown);
-      color: white;
-
-      border-radius: 25px;
-
-      padding: 35px;
-    }
-
-    .contact-info h3 {
-      font-family: "Playfair Display", serif;
-      font-size: 30px;
+    .about h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(42px, 5vw, 60px);
+      line-height: .95;
       margin-bottom: 20px;
     }
 
-    .contact-detail {
-      padding: 18px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.12);
-    }
-
-    .contact-detail:last-child {
-      border-bottom: 0;
-    }
-
-    .contact-detail small {
-      display: block;
-      color: var(--gold-light);
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      font-size: 10px;
-      margin-bottom: 5px;
-    }
-
-    .contact-detail p {
-      color: #eadfd5;
+    .about p {
+      color: #eadbca;
+      line-height: 1.8;
       font-size: 14px;
+      margin-bottom: 22px;
     }
 
-    .number-placeholder {
-      color: #bca99e !important;
-      font-style: italic;
+    .about-points {
+      display: grid;
+      gap: 13px;
     }
 
-    .contact-buttons {
+    .about-point {
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 25px;
+      gap: 12px;
+      align-items: center;
+      color: #f5e9d8;
+      font-size: 13px;
     }
 
-    .disabled-btn {
-      opacity: 0.45;
-      cursor: not-allowed;
-      pointer-events: none;
+    .about-point span {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(200,155,69,.15);
+      color: var(--gold-light);
+      font-size: 12px;
     }
 
-    .contact-form {
+    /* ================= LOCATION ================= */
+
+    .location {
+      background: var(--cream-2);
+    }
+
+    .location-card {
       background: white;
-
-      border: 1px solid #e8dbcd;
-
-      border-radius: 25px;
-
-      padding: 35px;
-
-      box-shadow: 0 12px 40px rgba(43,22,15,0.06);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      border-radius: 22px;
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 30px;
     }
 
-    .contact-form h3 {
-      font-family: "Playfair Display", serif;
-      color: var(--brown);
-      font-size: 30px;
+    .location-card h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 36px;
+      color: var(--brown-900);
+      margin-bottom: 10px;
+    }
+
+    .location-card p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    /* ================= ENQUIRY ================= */
+
+    .enquiry {
+      background: var(--cream);
+    }
+
+    .enquiry-wrap {
+      max-width: 800px;
+      margin: auto;
+      background: var(--brown-900);
+      padding: 42px;
+      border-radius: 24px;
+      color: white;
+      box-shadow: 0 25px 70px rgba(44,21,12,.18);
+    }
+
+    .enquiry-wrap h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 44px;
+      text-align: center;
       margin-bottom: 8px;
     }
 
-    .form-note {
-      color: var(--muted);
+    .enquiry-wrap > p {
+      color: #dfcfbd;
+      text-align: center;
       font-size: 13px;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
 
     .form-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 15px;
+      gap: 14px;
     }
 
     .field {
@@ -1060,308 +565,211 @@
     }
 
     .field label {
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--brown);
+      color: #e7d6c2;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     .field input,
-    .field select,
-    .field textarea {
+    .field textarea,
+    .field select {
       width: 100%;
-
-      border: 1px solid #ded0c2;
-
-      background: #fffdf9;
-
-      color: var(--text);
-
-      border-radius: 12px;
-
-      padding: 13px 14px;
-
+      border: 1px solid rgba(255,255,255,.15);
+      background: rgba(255,255,255,.06);
+      color: white;
+      border-radius: 10px;
+      padding: 13px;
       outline: none;
+    }
 
-      transition: 0.2s;
+    .field select option {
+      color: #222;
     }
 
     .field textarea {
-      min-height: 130px;
+      min-height: 110px;
       resize: vertical;
     }
 
     .field input:focus,
-    .field select:focus,
-    .field textarea:focus {
+    .field textarea:focus,
+    .field select:focus {
       border-color: var(--gold);
-      box-shadow: 0 0 0 3px rgba(196,154,72,0.12);
     }
 
-    .form-submit {
+    .form-button {
       width: 100%;
-      margin-top: 18px;
       border: 0;
+      cursor: pointer;
+      margin-top: 16px;
     }
 
-    .form-status {
-      margin-top: 15px;
-      font-size: 13px;
-      color: var(--brown);
-      display: none;
-    }
-
-
-    /* ================================
-       FOOTER
-    ================================= */
+    /* ================= FOOTER ================= */
 
     footer {
-      background: var(--brown-dark);
-      color: #d9c8bb;
-      padding: 45px 0 25px;
+      background: var(--brown-950);
+      color: white;
+      padding: 60px 0 30px;
     }
 
     .footer-grid {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr 0.8fr;
+      grid-template-columns: 1.3fr 1fr 1fr;
       gap: 40px;
-      padding-bottom: 35px;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,.1);
     }
 
-    footer h3 {
-      font-family: "Playfair Display", serif;
-      color: white;
-      font-size: 24px;
-      margin-bottom: 12px;
+    .footer-brand h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 35px;
+      color: var(--gold-light);
+      margin-bottom: 10px;
     }
 
-    footer p {
+    .footer-brand p,
+    .footer-column p {
+      color: #bda999;
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    .footer-column h4 {
+      color: var(--cream);
+      margin-bottom: 15px;
       font-size: 13px;
-      color: #bca99e;
     }
 
-    .footer-links {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+    .footer-column a {
+      display: block;
+      color: #bda999;
+      font-size: 12px;
+      margin-bottom: 10px;
+      transition: color .2s ease;
     }
 
-    .footer-links a {
-      font-size: 13px;
-      color: #cdbdb2;
-    }
-
-    .footer-links a:hover {
+    .footer-column a:hover {
       color: var(--gold-light);
     }
 
-    .footer-bottom {
+    .copyright {
+      padding-top: 25px;
       text-align: center;
-      padding-top: 22px;
+      color: #806c60;
       font-size: 11px;
-      color: #927f73;
     }
 
+    /* ================= MOBILE ORDER ================= */
 
-    /* ================================
-       FLOATING BUTTON
-    ================================= */
-
-    .top-button {
-      position: fixed;
-
-      right: 18px;
-      bottom: 18px;
-
-      width: 45px;
-      height: 45px;
-
-      border-radius: 50%;
-
-      display: grid;
-      place-items: center;
-
-      background: var(--gold);
-      color: var(--brown-dark);
-
-      font-weight: 900;
-
-      box-shadow: 0 8px 25px rgba(0,0,0,0.18);
-
-      opacity: 0;
-      visibility: hidden;
-
-      transition: 0.3s;
-
-      z-index: 900;
+    .mobile-order {
+      display: none;
     }
 
-    .top-button.show {
-      opacity: 1;
-      visibility: visible;
-    }
+    /* ================= RESPONSIVE ================= */
 
+    @media (max-width: 850px) {
 
-    /* ================================
-       ANIMATION
-    ================================= */
+      .nav-links {
+        display: none;
+      }
 
-    .reveal {
-      opacity: 0;
-      transform: translateY(25px);
-      transition: 0.7s ease;
-    }
+      .nav-order {
+        display: block;
+      }
 
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+      .hero {
+        min-height: auto;
+        padding: 115px 0 65px;
+      }
 
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
 
-    /* ================================
-       MOBILE
-    ================================= */
+      .hero h1 {
+        font-size: 58px;
+      }
 
-    @media (max-width: 900px) {
+      .hero-photo img {
+        height: 400px;
+      }
 
-      .hero-grid,
-      .about-grid,
-      .contact-grid,
-      .party-box {
+      .category-grid,
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid {
         grid-template-columns: 1fr;
       }
 
-      .menu-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .trust-grid {
-        grid-template-columns: 1fr 1fr;
+      .about-image img {
+        height: 350px;
       }
 
       .footer-grid {
         grid-template-columns: 1fr 1fr;
       }
-
-      .hero {
-        padding-top: 120px;
-        padding-bottom: 70px;
-      }
-
-      .cake-display {
-        min-height: 350px;
-      }
-
-      .party-box {
-        padding: 35px 25px;
-      }
     }
 
-
-    @media (max-width: 700px) {
+    @media (max-width: 560px) {
 
       .container {
-        width: min(100% - 24px, 1120px);
+        width: min(100% - 26px, 1120px);
       }
 
-      .section {
-        padding: 65px 0;
+      section {
+        padding: 70px 0;
       }
 
-      nav {
-        display: none;
-
-        position: absolute;
-
-        top: 76px;
-        left: 12px;
-        right: 12px;
-
-        background: var(--brown);
-
-        border: 1px solid rgba(196,154,72,0.25);
-
-        border-radius: 18px;
-
-        padding: 15px;
-
-        flex-direction: column;
-        align-items: stretch;
-
-        gap: 3px;
+      .logo {
+        font-size: 21px;
       }
 
-      nav.open {
-        display: flex;
-      }
-
-      nav a {
-        padding: 12px;
-        border-radius: 10px;
-      }
-
-      nav a:hover {
-        background: rgba(255,255,255,0.05);
-      }
-
-      .nav-button {
-        text-align: center;
-        margin-top: 5px;
-      }
-
-      .menu-toggle {
-        display: block;
-      }
-
-      .logo-text strong {
-        font-size: 15px;
-      }
-
-      .logo-text span {
-        font-size: 8px;
+      .logo span {
+        font-size: 7px;
       }
 
       .hero h1 {
-        font-size: 52px;
+        font-size: 50px;
       }
 
-      .hero-description {
-        font-size: 15px;
+      .hero-text {
+        font-size: 13px;
       }
 
-      .hero-buttons {
-        flex-direction: column;
+      .hero-photo img {
+        height: 340px;
+        border-radius: 130px 130px 15px 15px;
       }
 
-      .hero-buttons .btn {
-        width: 100%;
-      }
-
-      .menu-grid {
+      .category-grid,
+      .product-grid {
         grid-template-columns: 1fr;
       }
 
-      .trust-grid {
-        grid-template-columns: 1fr 1fr;
+      .category-card,
+      .category-card img {
+        min-height: 330px;
       }
 
-      .about-points {
+      .product-image {
+        height: 245px;
+      }
+
+      .location-card {
+        padding: 28px 22px;
         grid-template-columns: 1fr;
       }
 
-      .party-features {
-        grid-template-columns: 1fr;
+      .enquiry-wrap {
+        padding: 30px 18px;
       }
 
-      .gallery-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 180px);
-      }
-
-      .gallery-item:first-child {
-        grid-column: 1 / -1;
-        grid-row: auto;
+      .enquiry-wrap h2 {
+        font-size: 38px;
       }
 
       .form-grid {
@@ -1374,1151 +782,686 @@
 
       .footer-grid {
         grid-template-columns: 1fr;
+        gap: 30px;
       }
 
-      .contact-form,
-      .contact-info {
-        padding: 25px;
-      }
-
-      .section-title {
-        font-size: 38px;
-      }
-    }
-
-
-    @media (max-width: 420px) {
-
-      .hero h1 {
-        font-size: 45px;
-      }
-
-      .logo-mark {
-        width: 37px;
-        height: 37px;
-      }
-
-      .logo-text strong {
+      .mobile-order {
+        display: block;
+        position: fixed;
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+        z-index: 999;
+        background: var(--gold);
+        color: var(--brown-950);
+        text-align: center;
+        padding: 14px;
+        border-radius: 50px;
         font-size: 13px;
+        font-weight: 800;
+        box-shadow: 0 12px 30px rgba(0,0,0,.25);
       }
 
-      .trust-item strong {
-        font-size: 17px;
-      }
-
-      .gallery-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 170px);
-      }
-
-      .gallery-item:first-child {
-        grid-column: auto;
+      footer {
+        padding-bottom: 90px;
       }
     }
-
   </style>
 </head>
 
-
 <body>
 
-  <!-- =================================
-       HEADER
-  ================================== -->
+<!-- ================= HEADER ================= -->
 
-  <header>
+<header>
+  <div class="container nav">
 
-    <div class="container nav">
+    <a href="#home" class="logo">
+      Vijaya Cake Palace
+      <span>& Bakery · Hubli</span>
+    </a>
 
-      <a href="#home" class="logo">
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#cakes">Cakes</a>
+      <a href="#bakery">Bakery</a>
+      <a href="#about">About</a>
+      <a href="#location">Contact</a>
+    </nav>
 
-        <div class="logo-mark">
-          V
-        </div>
+    <a href="#enquiry" class="nav-order">Order Now</a>
 
-        <div class="logo-text">
-          <strong>Vijaya Cake Palace</strong>
-          <span>& Bakery</span>
+  </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <div class="eyebrow">
+        Vijaya Cake Palace & Bakery
+      </div>
+
+      <h1>
+        Made with love.<br>
+        <span>Served with joy.</span>
+      </h1>
+
+      <p class="hero-text">
+        Fresh cakes, delicious pastries and bakery favourites
+        for birthdays, celebrations and everyday sweet moments.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#cakes" class="btn btn-gold">
+          Explore Cakes
+        </a>
+
+        <a href="#location" class="btn btn-outline">
+          Find Our Bakery
+        </a>
+      </div>
+
+    </div>
+
+    <div class="hero-photo">
+
+      <!-- Replace with your original bakery/cake photo -->
+      <img
+        src="images/hero-cake.jpg"
+        alt="Fresh cake from Vijaya Cake Palace & Bakery"
+        onerror="this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85';"
+      >
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section id="cakes">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">Freshly prepared</div>
+
+      <h2>Something for every craving.</h2>
+
+      <p>
+        Discover our selection of cakes, pastries and bakery
+        favourites made for every kind of occasion.
+      </p>
+
+    </div>
+
+
+    <div class="category-grid">
+
+      <a href="#cake-menu" class="category-card">
+
+        <img
+          src="images/cakes.jpg"
+          alt="Cakes"
+          onerror="this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85';"
+        >
+
+        <div class="category-overlay">
+          <h3>Cakes</h3>
+          <p>Celebrate every special moment with a beautiful cake.</p>
         </div>
 
       </a>
 
 
-      <button
-        class="menu-toggle"
-        id="menuToggle"
-        aria-label="Open menu"
-      >
-        ☰
-      </button>
+      <a href="#pastry-menu" class="category-card">
+
+        <img
+          src="images/pastries.jpg"
+          alt="Pastries"
+          onerror="this.src='https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=85';"
+        >
+
+        <div class="category-overlay">
+          <h3>Pastries</h3>
+          <p>Soft, creamy and delicious treats for every craving.</p>
+        </div>
+
+      </a>
 
 
-      <nav id="navMenu">
+      <a href="#bakery" class="category-card">
 
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#about">About</a>
-        <a href="#party">Party Hall</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact" class="nav-button">
-          Enquiry
-        </a>
+        <img
+          src="images/bakery.jpg"
+          alt="Bakery items"
+          onerror="this.src='https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85';"
+        >
 
-      </nav>
+        <div class="category-overlay">
+          <h3>Bakery</h3>
+          <p>Fresh bakery favourites for everyday moments.</p>
+        </div>
+
+      </a>
 
     </div>
 
-  </header>
+  </div>
 
+</section>
 
-  <!-- =================================
-       HERO
-  ================================== -->
 
-  <main>
+<!-- ================= FEATURED PRODUCTS ================= -->
 
-    <section class="hero" id="home">
+<section class="products" id="cake-menu">
 
-      <div class="container hero-grid">
+  <div class="container">
 
-        <div class="hero-content reveal">
+    <div class="section-heading">
 
-          <div class="hero-kicker">
-            Vijaya Cake Palace & Bakery
-          </div>
+      <div class="eyebrow">Our favourites</div>
 
-          <h1>
-            Made with love.
-            <span>Served with joy.</span>
-          </h1>
+      <h2>Made for sweet moments.</h2>
 
-          <p class="hero-description">
-            Fresh cakes, pastries, snacks and bakery favourites —
-            along with a party hall for your special celebrations.
-          </p>
+      <p>
+        A few favourites from our bakery. Visit us or enquire
+        for available flavours and custom orders.
+      </p>
 
-          <div class="hero-buttons">
+    </div>
 
-            <a href="#menu" class="btn btn-gold">
-              Explore Our Menu
-            </a>
 
-            <a href="#party" class="btn btn-outline">
-              View Party Hall
-            </a>
+    <div class="product-grid">
 
-          </div>
+      <!-- PRODUCT 1 -->
 
-          <p class="hero-note">
-            Siddheshwar Nagar · Unkal Cross · Hubli
-          </p>
+      <article class="product-card">
 
-        </div>
-
-
-        <div class="cake-display reveal">
-
-          <div class="cake-glow"></div>
-
-          <div class="cake">
-
-            <div class="cake-top">
-
-              <div class="cherry one"></div>
-
-            </div>
-
-            <div class="cake-layer"></div>
-
-            <div class="cake-bottom"></div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =================================
-         TRUST STRIP
-    ================================== -->
-
-    <section class="trust">
-
-      <div class="container trust-grid">
-
-        <div class="trust-item">
-          <strong>Cakes</strong>
-          <span>Celebration favourites</span>
-        </div>
-
-        <div class="trust-item">
-          <strong>Pastries</strong>
-          <span>Sweet little treats</span>
-        </div>
-
-        <div class="trust-item">
-          <strong>Bakery</strong>
-          <span>Fresh bakery items</span>
-        </div>
-
-        <div class="trust-item">
-          <strong>Party Hall</strong>
-          <span>Celebrate together</span>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =================================
-         MENU
-    ================================== -->
-
-    <section class="section menu-section" id="menu">
-
-      <div class="container">
-
-        <div class="section-heading reveal">
-
-          <div class="section-label">
-            Our Selection
-          </div>
-
-          <h2 class="section-title">
-            Something for every craving.
-          </h2>
-
-          <p class="section-text">
-            Explore our bakery categories and discover
-            something delicious for every occasion.
-          </p>
-
-        </div>
-
-
-        <div class="menu-grid">
-
-          <article class="menu-card reveal">
-
-            <div class="menu-icon">
-              🎂
-            </div>
-
-            <h3>Cakes</h3>
-
-            <p>
-              Beautiful cakes for birthdays,
-              celebrations and special moments.
-            </p>
-
-            <div class="card-line"></div>
-
-          </article>
-
-
-          <article class="menu-card reveal">
-
-            <div class="menu-icon">
-              🧁
-            </div>
-
-            <h3>Pastries</h3>
-
-            <p>
-              Soft, sweet and delicious pastries
-              for a quick treat.
-            </p>
-
-            <div class="card-line"></div>
-
-          </article>
-
-
-          <article class="menu-card reveal">
-
-            <div class="menu-icon">
-              🥐
-            </div>
-
-            <h3>Snacks</h3>
-
-            <p>
-              Tasty bakery snacks for tea time,
-              evening cravings and more.
-            </p>
-
-            <div class="card-line"></div>
-
-          </article>
-
-
-          <article class="menu-card reveal">
-
-            <div class="menu-icon">
-              🍞
-            </div>
-
-            <h3>Bakery Items</h3>
-
-            <p>
-              Everyday bakery favourites made
-              for sharing and enjoying.
-            </p>
-
-            <div class="card-line"></div>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =================================
-         ABOUT
-    ================================== -->
-
-    <section class="section about" id="about">
-
-      <div class="container about-grid">
-
-        <div class="about-visual reveal">
-
-          <div class="about-badge">
-
-            <div>
-
-              <strong>
-                Vijaya
-              </strong>
-
-              <span>
-                Cake Palace & Bakery
-              </span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <div class="reveal">
-
-          <div class="section-label">
-            About Us
-          </div>
-
-          <h2 class="section-title">
-            A place for sweet moments.
-          </h2>
-
-          <div class="gold-line"></div>
-
-          <p class="section-text">
-            Vijaya Cake Palace & Bakery is a local destination
-            for cakes, pastries, snacks and bakery favourites
-            in Siddheshwar Nagar, Unkal Cross, Hubli.
-          </p>
-
-          <p
-            class="section-text"
-            style="margin-top:16px;"
+        <div class="product-image">
+          <img
+            src="images/chocolate-cake.jpg"
+            alt="Chocolate cake"
+            onerror="this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=85';"
           >
-            Whether you are celebrating a birthday,
-            gathering with family or simply looking
-            for something delicious, we are here
-            to make the moment special.
-          </p>
-
-
-          <div class="about-points">
-
-            <div class="about-point">
-
-              <strong>
-                Celebration Cakes
-              </strong>
-
-              <span>
-                Cakes for memorable occasions.
-              </span>
-
-            </div>
-
-
-            <div class="about-point">
-
-              <strong>
-                Bakery Favourites
-              </strong>
-
-              <span>
-                Snacks, pastries and bakery treats.
-              </span>
-
-            </div>
-
-
-            <div class="about-point">
-
-              <strong>
-                Party Hall
-              </strong>
-
-              <span>
-                A space for your special gatherings.
-              </span>
-
-            </div>
-
-
-            <div class="about-point">
-
-              <strong>
-                Local & Convenient
-              </strong>
-
-              <span>
-                Located at Unkal Cross, Hubli.
-              </span>
-
-            </div>
-
-          </div>
-
         </div>
 
-      </div>
+        <div class="product-content">
 
-    </section>
-
-
-    <!-- =================================
-         PARTY HALL
-    ================================== -->
-
-    <section class="section party" id="party">
-
-      <div class="container">
-
-        <div class="party-box reveal">
-
-          <div>
-
-            <div class="section-label">
-              Celebrate With Us
-            </div>
-
-            <h2>
-              Your celebration deserves its own space.
-            </h2>
-
-            <p>
-              Vijaya Cake Palace & Bakery also has a
-              party hall for celebrations and gatherings.
-              Contact us to enquire about your event.
-            </p>
-
-
-            <div class="party-features">
-
-              <div class="party-feature">
-                <strong>Birthdays</strong>
-                Special moments with family and friends.
-              </div>
-
-              <div class="party-feature">
-                <strong>Family Events</strong>
-                Gather together and celebrate.
-              </div>
-
-              <div class="party-feature">
-                <strong>Special Occasions</strong>
-                Make your important day memorable.
-              </div>
-
-              <div class="party-feature">
-                <strong>Enquiries</strong>
-                Contact us for party hall details.
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div class="party-card">
-
-            <div>
-
-              <div class="party-icon">
-                ✨
-              </div>
-
-              <h3>
-                Party Hall
-              </h3>
-
-              <p style="margin-top:8px;">
-                Celebrate. Create memories.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =================================
-         GALLERY
-    ================================== -->
-
-    <section class="section gallery" id="gallery">
-
-      <div class="container">
-
-        <div class="section-heading reveal">
-
-          <div class="section-label">
-            Gallery
-          </div>
-
-          <h2 class="section-title">
-            A taste of Vijaya.
-          </h2>
-
-          <p class="section-text">
-            Bakery and party hall photos will be added here.
-          </p>
-
-        </div>
-
-
-        <div class="gallery-grid">
-
-          <div class="gallery-item reveal">
-
-            <div class="gallery-content">
-
-              <strong>
-                Bakery
-              </strong>
-
-              <span>
-                Photo coming soon
-              </span>
-
-            </div>
-
-          </div>
-
-
-          <div class="gallery-item reveal">
-
-            <div class="gallery-content">
-
-              <strong>
-                Cakes
-              </strong>
-
-              <span>
-                Photo coming soon
-              </span>
-
-            </div>
-
-          </div>
-
-
-          <div class="gallery-item reveal">
-
-            <div class="gallery-content">
-
-              <strong>
-                Pastries
-              </strong>
-
-              <span>
-                Photo coming soon
-              </span>
-
-            </div>
-
-          </div>
-
-
-          <div class="gallery-item reveal">
-
-            <div class="gallery-content">
-
-              <strong>
-                Snacks
-              </strong>
-
-              <span>
-                Photo coming soon
-              </span>
-
-            </div>
-
-          </div>
-
-
-          <div class="gallery-item reveal">
-
-            <div class="gallery-content">
-
-              <strong>
-                Party Hall
-              </strong>
-
-              <span>
-                Photo coming soon
-              </span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =================================
-         CONTACT
-    ================================== -->
-
-    <section class="section contact" id="contact">
-
-      <div class="container">
-
-        <div class="section-heading reveal">
-
-          <div class="section-label">
-            Contact
-          </div>
-
-          <h2 class="section-title">
-            Let's plan something delicious.
-          </h2>
-
-          <p class="section-text">
-            Send an enquiry for cakes, bakery items
-            or the party hall.
-          </p>
-
-        </div>
-
-
-        <div class="contact-grid">
-
-
-          <!-- CONTACT INFO -->
-
-          <div class="contact-info reveal">
-
-            <h3>
-              Visit Vijaya
-            </h3>
-
-
-            <div class="contact-detail">
-
-              <small>
-                Address
-              </small>
-
-              <p>
-                Siddheshwar Nagar,<br>
-                Unkal Cross,<br>
-                Hubli, Karnataka
-              </p>
-
-            </div>
-
-
-            <div class="contact-detail">
-
-              <small>
-                Phone / WhatsApp
-              </small>
-
-              <p class="number-placeholder">
-                Number will be added soon.
-              </p>
-
-            </div>
-
-
-            <div class="contact-detail">
-
-              <small>
-                Services
-              </small>
-
-              <p>
-                Cakes · Pastries · Snacks · Bakery Items
-                · Party Hall
-              </p>
-
-            </div>
-
-
-            <div class="contact-buttons">
-
-              <!--
-                PHONE & WHATSAPP ARE DISABLED
-                UNTIL THE REAL NUMBER IS PROVIDED.
-              -->
-
-              <span class="btn btn-outline disabled-btn">
-                Call
-              </span>
-
-              <span class="btn btn-outline disabled-btn">
-                WhatsApp
-              </span>
-
-
-              <a
-                class="btn btn-gold"
-                href="https://www.google.com/maps/search/?api=1&query=Siddheshwar+Nagar+Unkal+Cross+Hubli+Karnataka"
-                target="_blank"
-                rel="noopener"
-              >
-                Open Map
-              </a>
-
-            </div>
-
-          </div>
-
-
-          <!-- ENQUIRY FORM -->
-
-          <div class="contact-form reveal">
-
-            <h3>
-              Send an Enquiry
-            </h3>
-
-            <p class="form-note">
-              Fill in the details below. The website will
-              prepare your enquiry so you can copy it.
-            </p>
-
-
-            <form id="enquiryForm">
-
-              <div class="form-grid">
-
-
-                <div class="field">
-
-                  <label for="name">
-                    Your Name
-                  </label>
-
-                  <input
-                    type="text"
-                    id="name"
-                    placeholder="Enter your name"
-                    required
-                  >
-
-                </div>
-
-
-                <div class="field">
-
-                  <label for="phone">
-                    Your Phone
-                  </label>
-
-                  <input
-                    type="tel"
-                    id="phone"
-                    placeholder="Enter phone number"
-                    required
-                  >
-
-                </div>
-
-
-                <div class="field full">
-
-                  <label for="enquiryType">
-                    Enquiry For
-                  </label>
-
-                  <select
-                    id="enquiryType"
-                    required
-                  >
-
-                    <option value="">
-                      Select an option
-                    </option>
-
-                    <option value="Cake">
-                      Cake
-                    </option>
-
-                    <option value="Pastry">
-                      Pastry
-                    </option>
-
-                    <option value="Bakery Items">
-                      Bakery Items
-                    </option>
-
-                    <option value="Party Hall">
-                      Party Hall
-                    </option>
-
-                    <option value="Other">
-                      Other
-                    </option>
-
-                  </select>
-
-                </div>
-
-
-                <div class="field full">
-
-                  <label for="message">
-                    Message
-                  </label>
-
-                  <textarea
-                    id="message"
-                    placeholder="Tell us what you need..."
-                    required
-                  ></textarea>
-
-                </div>
-
-              </div>
-
-
-              <button
-                type="submit"
-                class="btn btn-gold form-submit"
-              >
-                Prepare Enquiry
-              </button>
-
-
-              <div
-                id="formStatus"
-                class="form-status"
-              ></div>
-
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- =================================
-       FOOTER
-  ================================== -->
-
-  <footer>
-
-    <div class="container">
-
-      <div class="footer-grid">
-
-
-        <div>
-
-          <h3>
-            Vijaya Cake Palace
-          </h3>
+          <h3>Chocolate Cake</h3>
 
           <p>
-            Cakes, pastries, snacks, bakery items
-            and a party hall for your celebrations.
+            Rich, chocolatey and perfect for celebrations.
           </p>
 
-          <p style="margin-top:10px;">
-            Siddheshwar Nagar, Unkal Cross, Hubli.
-          </p>
-
-        </div>
-
-
-        <div>
-
-          <h3>
-            Explore
-          </h3>
-
-          <div class="footer-links">
-
-            <a href="#home">Home</a>
-            <a href="#menu">Menu</a>
-            <a href="#about">About</a>
-            <a href="#party">Party Hall</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
-
+          <div class="product-bottom">
+            <span class="product-tag">Cake</span>
+            <a href="#enquiry" class="small-btn">Enquire</a>
           </div>
 
         </div>
 
+      </article>
 
-        <div>
 
-          <h3>
-            Visit
-          </h3>
+      <!-- PRODUCT 2 -->
 
-          <div class="footer-links">
+      <article class="product-card">
 
-            <a href="#contact">
-              Siddheshwar Nagar
-            </a>
+        <div class="product-image">
+          <img
+            src="images/pastry.jpg"
+            alt="Fresh pastry"
+            onerror="this.src='https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=85';"
+          >
+        </div>
 
-            <a href="#contact">
-              Unkal Cross
-            </a>
+        <div class="product-content">
 
-            <a href="#contact">
-              Hubli, Karnataka
-            </a>
+          <h3>Fresh Pastry</h3>
 
+          <p>
+            Creamy and delicious for a quick sweet treat.
+          </p>
+
+          <div class="product-bottom">
+            <span class="product-tag">Pastry</span>
+            <a href="#enquiry" class="small-btn">Enquire</a>
           </div>
 
         </div>
 
+      </article>
 
-      </div>
+
+      <!-- PRODUCT 3 -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+          <img
+            src="images/bakery-item.jpg"
+            alt="Bakery item"
+            onerror="this.src='https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=85';"
+          >
+        </div>
+
+        <div class="product-content">
+
+          <h3>Bakery Favourites</h3>
+
+          <p>
+            Freshly baked favourites for every day.
+          </p>
+
+          <div class="product-bottom">
+            <span class="product-tag">Bakery</span>
+            <a href="#enquiry" class="small-btn">Enquire</a>
+          </div>
+
+        </div>
+
+      </article>
 
 
-      <div class="footer-bottom">
+    </div>
 
-        © <span id="year"></span>
-        Vijaya Cake Palace & Bakery.
-        All rights reserved.
+  </div>
+
+</section>
+
+
+<!-- ================= BAKERY ================= -->
+
+<section id="bakery">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">Fresh from our bakery</div>
+
+      <h2>More than just cakes.</h2>
+
+      <p>
+        Explore our bakery selection and discover something
+        delicious for every occasion.
+      </p>
+
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product-card">
+
+        <div class="product-image">
+          <img
+            src="images/bakery-1.jpg"
+            alt="Bakery item"
+            onerror="this.src='https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=85';"
+          >
+        </div>
+
+        <div class="product-content">
+          <h3>Fresh Bakes</h3>
+          <p>Freshly baked goodness for your everyday cravings.</p>
+          <div class="product-bottom">
+            <span class="product-tag">Fresh</span>
+            <a href="#enquiry" class="small-btn">Enquire</a>
+          </div>
+        </div>
+
+      </article>
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+          <img
+            src="images/bakery-2.jpg"
+            alt="Bakery special"
+            onerror="this.src='https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=85';"
+          >
+        </div>
+
+        <div class="product-content">
+          <h3>Bakery Specials</h3>
+          <p>A selection of delicious treats to enjoy anytime.</p>
+          <div class="product-bottom">
+            <span class="product-tag">Specials</span>
+            <a href="#enquiry" class="small-btn">Enquire</a>
+          </div>
+        </div>
+
+      </article>
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+          <img
+            src="images/bakery-3.jpg"
+            alt="Sweet bakery item"
+            onerror="this.src='https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=800&q=85';"
+          >
+        </div>
+
+        <div class="product-content">
+          <h3>Sweet Treats</h3>
+          <p>Little treats made to make your day sweeter.</p>
+          <div class="product-bottom">
+            <span class="product-tag">Treats</span>
+            <a href="#enquiry" class="small-btn">Enquire</a>
+          </div>
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+  <div class="container about-grid">
+
+    <div class="about-image">
+
+      <img
+        src="images/shop.jpg"
+        alt="Vijaya Cake Palace & Bakery"
+        onerror="this.src='https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=85';"
+      >
+
+    </div>
+
+
+    <div>
+
+      <div class="eyebrow">Welcome to Vijaya</div>
+
+      <h2>A place for sweet moments.</h2>
+
+      <p>
+        Vijaya Cake Palace & Bakery brings together cakes,
+        pastries and bakery favourites in one welcoming place
+        in Hubli.
+      </p>
+
+      <div class="about-points">
+
+        <div class="about-point">
+          <span>✓</span>
+          Fresh bakery selection
+        </div>
+
+        <div class="about-point">
+          <span>✓</span>
+          Cakes for celebrations
+        </div>
+
+        <div class="about-point">
+          <span>✓</span>
+          Pastries and sweet treats
+        </div>
+
+        <div class="about-point">
+          <span>✓</span>
+          Convenient location in Hubli
+        </div>
 
       </div>
 
     </div>
 
-  </footer>
+  </div>
 
+</section>
 
-  <!-- =================================
-       BACK TO TOP
-  ================================== -->
 
-  <a
-    href="#home"
-    class="top-button"
-    id="topButton"
-    aria-label="Back to top"
-  >
-    ↑
-  </a>
+<!-- ================= LOCATION ================= -->
 
+<section class="location" id="location">
 
-  <!-- =================================
-       JAVASCRIPT
-  ================================== -->
+  <div class="container">
 
-  <script>
+    <div class="section-heading">
 
-    /* ================================
-       MOBILE MENU
-    ================================= */
+      <div class="eyebrow">Visit us</div>
 
-    const menuToggle =
-      document.getElementById("menuToggle");
+      <h2>Find Vijaya Cake Palace.</h2>
 
-    const navMenu =
-      document.getElementById("navMenu");
+      <p>
+        Come visit us at Siddheshwar Nagar, Unkal Cross, Hubli.
+      </p>
 
+    </div>
 
-    menuToggle.addEventListener("click", () => {
 
-      navMenu.classList.toggle("open");
+    <div class="location-card">
 
-    });
+      <div>
 
+        <h3>Our Bakery</h3>
 
-    /* Close menu after clicking a link */
+        <p>
+          Siddheshwar Nagar,<br>
+          Unkal Cross, Hubli, Karnataka
+        </p>
 
-    document
-      .querySelectorAll("#navMenu a")
-      .forEach(link => {
+      </div>
 
-        link.addEventListener("click", () => {
+      <a
+        href="https://maps.app.goo.gl/L6LUAd8G3Qbh"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-gold"
+      >
+        Get Directions
+      </a>
 
-          navMenu.classList.remove("open");
+    </div>
 
-        });
+  </div>
 
-      });
+</section>
 
 
-    /* ================================
-       YEAR
-    ================================= */
+<!-- ================= ENQUIRY ================= -->
 
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
+<section class="enquiry" id="enquiry">
 
+  <div class="container">
 
-    /* ================================
-       SCROLL REVEAL
-    ================================= */
+    <div class="enquiry-wrap">
 
-    const revealElements =
-      document.querySelectorAll(".reveal");
+      <h2>Let's plan something delicious.</h2>
 
+      <p>
+        Have a cake or bakery enquiry? Send us the details.
+      </p>
 
-    const revealObserver =
-      new IntersectionObserver(
-        entries => {
 
-          entries.forEach(entry => {
+      <form
+        action="https://formsubmit.co/"
+        method="POST"
+      >
 
-            if (entry.isIntersecting) {
+        <div class="form-grid">
 
-              entry.target.classList.add("visible");
+          <div class="field">
 
-              revealObserver.unobserve(entry.target);
+            <label>Name</label>
 
-            }
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              required
+            >
 
-          });
+          </div>
 
-        },
-        {
-          threshold: 0.12
-        }
-      );
 
+          <div class="field">
 
-    revealElements.forEach(element => {
+            <label>Phone</label>
 
-      revealObserver.observe(element);
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Your phone number"
+              required
+            >
 
-    });
+          </div>
 
 
-    /* ================================
-       BACK TO TOP
-    ================================= */
+          <div class="field">
 
-    const topButton =
-      document.getElementById("topButton");
+            <label>What do you need?</label>
 
+            <select name="category">
 
-    window.addEventListener("scroll", () => {
+              <option value="Cake">Cake</option>
+              <option value="Pastry">Pastry</option>
+              <option value="Bakery">Bakery Item</option>
+              <option value="Other">Other</option>
 
-      if (window.scrollY > 500) {
+            </select>
 
-        topButton.classList.add("show");
+          </div>
 
-      } else {
 
-        topButton.classList.remove("show");
+          <div class="field">
 
-      }
+            <label>Occasion</label>
 
-    });
+            <input
+              type="text"
+              name="occasion"
+              placeholder="Birthday, anniversary..."
+            >
 
+          </div>
 
-    /* ================================
-       ENQUIRY FORM
-    ================================= */
 
-    const enquiryForm =
-      document.getElementById("enquiryForm");
+          <div class="field full">
 
-    const formStatus =
-      document.getElementById("formStatus");
+            <label>Message</label>
 
+            <textarea
+              name="message"
+              placeholder="Tell us what you are looking for..."
+            ></textarea>
 
-    enquiryForm.addEventListener("submit", async function(event) {
+          </div>
 
-      event.preventDefault();
+        </div>
 
 
-      const name =
-        document.getElementById("name").value.trim();
+        <button
+          type="submit"
+          class="btn btn-gold form-button"
+        >
+          Send Enquiry
+        </button>
 
-      const phone =
-        document.getElementById("phone").value.trim();
+      </form>
 
-      const enquiryType =
-        document.getElementById("enquiryType").value;
+    </div>
 
-      const message =
-        document.getElementById("message").value.trim();
+  </div>
 
+</section>
 
-      const enquiryText =
-`Vijaya Cake Palace & Bakery Enquiry
 
-Name: ${name}
-Phone: ${phone}
-Enquiry For: ${enquiryType}
+<!-- ================= FOOTER ================= -->
 
-Message:
-${message}
+<footer>
 
-Location:
-Siddheshwar Nagar, Unkal Cross, Hubli, Karnataka`;
+  <div class="container">
 
+    <div class="footer-grid">
 
-      try {
+      <div class="footer-brand">
 
-        await navigator.clipboard.writeText(enquiryText);
+        <h2>Vijaya Cake Palace</h2>
 
-        formStatus.style.display = "block";
+        <p>
+          Cakes, pastries and bakery favourites
+          for every sweet moment.
+        </p>
 
-        formStatus.textContent =
-          "Enquiry copied successfully. You can now paste it into WhatsApp or any messaging app.";
+      </div>
 
-      } catch (error) {
 
-        formStatus.style.display = "block";
+      <div class="footer-column">
 
-        formStatus.textContent =
-          "Your enquiry is ready. Please copy the details manually and send them to the bakery.";
+        <h4>Explore</h4>
 
-      }
+        <a href="#home">Home</a>
+        <a href="#cakes">Cakes</a>
+        <a href="#bakery">Bakery</a>
+        <a href="#about">About Us</a>
 
-    });
+      </div>
 
-  </script>
+
+      <div class="footer-column">
+
+        <h4>Visit Us</h4>
+
+        <p>
+          Siddheshwar Nagar,<br>
+          Unkal Cross, Hubli,<br>
+          Karnataka
+        </p>
+
+        <br>
+
+        <a
+          href="https://maps.app.goo.gl/L6LUAd8G3Qbh"
+          target="_blank"
+          rel="noopener"
+        >
+          Get Directions →
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+      © 2026 Vijaya Cake Palace & Bakery. All rights reserved.
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- MOBILE ORDER BUTTON -->
+
+<a href="#enquiry" class="mobile-order">
+  Order / Enquire Now
+</a>
+
 
 </body>
 </html>
