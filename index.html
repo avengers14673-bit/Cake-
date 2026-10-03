@@ -518,6 +518,95 @@
       line-height: 1.7;
     }
 
+    /* ================= CONTACT ================= */
+
+    .contact-section {
+      background: var(--cream-2);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .contact-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 35px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-card h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 36px;
+      color: var(--brown-900);
+      margin-bottom: 10px;
+    }
+
+    .contact-card p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 22px;
+    }
+
+    .contact-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 700;
+      transition: .25s ease;
+    }
+
+    .contact-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .call-btn {
+      background: var(--brown-900);
+      color: white;
+    }
+
+    .whatsapp-btn {
+      background: #25d366;
+      color: white;
+    }
+
+    .map-btn {
+      background: var(--gold);
+      color: var(--brown-950);
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    .contact-detail strong {
+      color: var(--brown-900);
+    }
+
     /* ================= ENQUIRY ================= */
 
     .enquiry {
@@ -712,6 +801,10 @@
       .footer-grid {
         grid-template-columns: 1fr 1fr;
       }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 560px) {
@@ -762,6 +855,18 @@
       .location-card {
         padding: 28px 22px;
         grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        padding: 28px 22px;
+      }
+
+      .contact-buttons {
+        flex-direction: column;
+      }
+
+      .contact-btn {
+        width: 100%;
       }
 
       .enquiry-wrap {
@@ -826,10 +931,10 @@
       <a href="#cakes">Cakes</a>
       <a href="#bakery">Bakery</a>
       <a href="#about">About</a>
-      <a href="#location">Contact</a>
+      <a href="#contact">Contact</a>
     </nav>
 
-    <a href="#enquiry" class="nav-order">Order Now</a>
+    <a href="#contact" class="nav-order">Order Now</a>
 
   </div>
 </header>
@@ -858,13 +963,15 @@
       </p>
 
       <div class="hero-buttons">
+
         <a href="#cakes" class="btn btn-gold">
           Explore Cakes
         </a>
 
-        <a href="#location" class="btn btn-outline">
+        <a href="#contact" class="btn btn-outline">
           Find Our Bakery
         </a>
+
       </div>
 
     </div>
@@ -954,8 +1061,6 @@
       </a>
 
 
-      <!-- ================= PARTY HALL ADDED ================= -->
-
       <a href="#party-hall" class="category-card">
 
         <img
@@ -999,6 +1104,574 @@
 
     <div class="product-grid">
 
-      <!-- PRODUCT 1 -->
+      <article class="product-card">
 
-      <article class="
+        <div class="product-image">
+          <img
+            src="images/cake-1.jpg"
+            alt="Celebration Cake"
+            onerror="this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85';"
+          >
+        </div>
+
+        <div class="product-content">
+
+          <h3>Celebration Cake</h3>
+
+          <p>
+            Beautiful cakes for birthdays and special celebrations.
+          </p>
+
+          <div class="product-bottom">
+            <span class="product-tag">Fresh Cake</span>
+
+            <a
+              href="https://wa.me/917411423433?text=Hello%20Vijaya%20Cake%20Palace%2C%20I%20want%20to%20enquire%20about%20a%20Celebration%20Cake."
+              target="_blank"
+              rel="noopener"
+              class="small-btn"
+            >
+              Enquire
+            </a>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+          <img
+            src="images/cake-2.jpg"
+            alt="Special Cake"
+            onerror="this.src='https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=85';"
+          >
+        </div>
+
+        <div class="product-content">
+
+          <h3>Special Cake</h3>
+
+          <p>
+            Delicious cakes prepared for your memorable moments.
+          </p>
+
+          <div class="product-bottom">
+            <span class="product-tag">Made Fresh</span>
+
+            <a
+              href="https://wa.me/917411423433?text=Hello%20Vijaya%20Cake%20Palace%2C%20I%20want%20to%20enquire%20about%20a%20Special%20Cake."
+              target="_blank"
+              rel="noopener"
+              class="small-btn"
+            >
+              Enquire
+            </a>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+          <img
+            src="images/cake-3.jpg"
+            alt="Custom Cake"
+            onerror="this.src='https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=85';"
+          >
+        </div>
+
+        <div class="product-content">
+
+          <h3>Custom Cake</h3>
+
+          <p>
+            Ask us about custom cakes and available flavours.
+          </p>
+
+          <div class="product-bottom">
+            <span class="product-tag">Custom Order</span>
+
+            <a
+              href="https://wa.me/917411423433?text=Hello%20Vijaya%20Cake%20Palace%2C%20I%20want%20to%20enquire%20about%20a%20Custom%20Cake."
+              target="_blank"
+              rel="noopener"
+              class="small-btn"
+            >
+              Enquire
+            </a>
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+  <div class="container about-grid">
+
+    <div class="about-image">
+
+      <img
+        src="images/about.jpg"
+        alt="Vijaya Cake Palace & Bakery"
+        onerror="this.src='https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85';"
+      >
+
+    </div>
+
+    <div>
+
+      <div class="eyebrow">About us</div>
+
+      <h2>Sweet moments, made special.</h2>
+
+      <p>
+        At Vijaya Cake Palace & Bakery, we believe every celebration
+        deserves something delicious. From beautiful cakes to bakery
+        favourites, we prepare treats for birthdays, celebrations
+        and everyday moments.
+      </p>
+
+      <div class="about-points">
+
+        <div class="about-point">
+          <span>✓</span>
+          Freshly prepared bakery items
+        </div>
+
+        <div class="about-point">
+          <span>✓</span>
+          Cakes for birthdays and celebrations
+        </div>
+
+        <div class="about-point">
+          <span>✓</span>
+          Custom orders available
+        </div>
+
+        <div class="about-point">
+          <span>✓</span>
+          Party hall for special occasions
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= LOCATION ================= -->
+
+<section class="location" id="location">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">Visit us</div>
+
+      <h2>Find our bakery.</h2>
+
+      <p>
+        Visit Vijaya Cake Palace & Bakery in Hubballi, Karnataka.
+      </p>
+
+    </div>
+
+    <div class="location-card">
+
+      <div>
+
+        <h3>Vijaya Cake Palace & Bakery</h3>
+
+        <p>
+          📍 Siddheshwar Nagar, Unkal Cross, Hubballi, Karnataka
+        </p>
+
+        <p>
+          📞 7411423433
+        </p>
+
+      </div>
+
+      <div class="contact-buttons">
+
+        <a
+          href="https://maps.app.goo.gl/Tb4qKRRK3rKVRxtF9?g_st=ac"
+          target="_blank"
+          rel="noopener"
+          class="contact-btn map-btn"
+        >
+          📍 Open in Google Maps
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">Get in touch</div>
+
+      <h2>Let's make your celebration special.</h2>
+
+      <p>
+        For orders, bookings and enquiries, contact us directly.
+      </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+
+        <h3>Contact & Order</h3>
+
+        <p>
+          Want to order a cake or ask about our bakery items?
+          Call us or send us a WhatsApp message.
+        </p>
+
+        <div class="contact-buttons">
+
+          <a
+            href="tel:+917411423433"
+            class="contact-btn call-btn"
+          >
+            📞 Call Now
+          </a>
+
+          <a
+            href="https://wa.me/917411423433?text=Hello%20Vijaya%20Cake%20Palace%20%26%20Bakery%2C%20I%20would%20like%20to%20place%20an%20order."
+            target="_blank"
+            rel="noopener"
+            class="contact-btn whatsapp-btn"
+          >
+            💬 WhatsApp / Order Now
+          </a>
+
+        </div>
+
+        <div class="contact-details">
+
+          <div class="contact-detail">
+            <span>📱</span>
+            <div>
+              <strong>Phone / WhatsApp</strong><br>
+              7411423433
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span>🎂</span>
+            <div>
+              <strong>Orders & Bookings</strong><br>
+              Cakes, bakery items & celebrations
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <h3>Our Location</h3>
+
+        <p>
+          Come visit Vijaya Cake Palace & Bakery in Hubballi,
+          Karnataka.
+        </p>
+
+        <div class="contact-details">
+
+          <div class="contact-detail">
+            <span>📍</span>
+
+            <div>
+              <strong>Address</strong><br>
+              Siddheshwar Nagar, Unkal Cross,<br>
+              Hubballi, Karnataka
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="contact-buttons" style="margin-top:22px;">
+
+          <a
+            href="https://maps.app.goo.gl/Tb4qKRRK3rKVRxtF9?g_st=ac"
+            target="_blank"
+            rel="noopener"
+            class="contact-btn map-btn"
+          >
+            📍 Open in Google Maps
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ENQUIRY ================= -->
+
+<section class="enquiry" id="enquiry">
+
+  <div class="container">
+
+    <div class="enquiry-wrap">
+
+      <h2>Place an Enquiry</h2>
+
+      <p>
+        Fill in your details and we'll get back to you on WhatsApp.
+      </p>
+
+      <form id="enquiryForm">
+
+        <div class="form-grid">
+
+          <div class="field">
+
+            <label for="name">Your Name</label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            >
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="phone">Phone Number</label>
+
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              required
+            >
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="occasion">Occasion</label>
+
+            <select id="occasion" name="occasion">
+
+              <option value="Birthday">Birthday</option>
+              <option value="Anniversary">Anniversary</option>
+              <option value="Wedding">Wedding</option>
+              <option value="Party">Party</option>
+              <option value="Other">Other</option>
+
+            </select>
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="cake">Cake / Item</label>
+
+            <input
+              type="text"
+              id="cake"
+              name="cake"
+              placeholder="What would you like?"
+            >
+
+          </div>
+
+
+          <div class="field full">
+
+            <label for="message">Message</label>
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell us about your order..."
+            ></textarea>
+
+          </div>
+
+        </div>
+
+
+        <button
+          type="submit"
+          class="btn btn-gold form-button"
+        >
+          Send Enquiry on WhatsApp
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+
+        <h2>Vijaya Cake Palace</h2>
+
+        <p>
+          Cakes, pastries and bakery favourites made for
+          every special moment.
+        </p>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>Quick Links</h4>
+
+        <a href="#home">Home</a>
+        <a href="#cakes">Cakes</a>
+        <a href="#about">About</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>Contact</h4>
+
+        <a href="tel:+917411423433">
+          📞 7411423433
+        </a>
+
+        <a
+          href="https://wa.me/917411423433"
+          target="_blank"
+          rel="noopener"
+        >
+          💬 WhatsApp
+        </a>
+
+        <a
+          href="https://maps.app.goo.gl/Tb4qKRRK3rKVRxtF9?g_st=ac"
+          target="_blank"
+          rel="noopener"
+        >
+          📍 Hubballi, Karnataka
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+      © 2026 Vijaya Cake Palace & Bakery. All Rights Reserved.
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- ================= MOBILE ORDER BUTTON ================= -->
+
+<a
+  href="https://wa.me/917411423433?text=Hello%20Vijaya%20Cake%20Palace%20%26%20Bakery%2C%20I%20would%20like%20to%20place%20an%20order."
+  target="_blank"
+  rel="noopener"
+  class="mobile-order"
+>
+  💬 Order on WhatsApp
+</a>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+  document.getElementById("enquiryForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const occasion = document.getElementById("occasion").value;
+    const cake = document.getElementById("cake").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const whatsappMessage =
+      "Hello Vijaya Cake Palace & Bakery,%0A%0A" +
+      "Name: " + encodeURIComponent(name) + "%0A" +
+      "Phone: " + encodeURIComponent(phone) + "%0A" +
+      "Occasion: " + encodeURIComponent(occasion) + "%0A" +
+      "Cake / Item: " + encodeURIComponent(cake) + "%0A" +
+      "Message: " + encodeURIComponent(message);
+
+    const whatsappURL =
+      "https://wa.me/917411423433?text=" + whatsappMessage;
+
+    window.open(whatsappURL, "_blank");
+
+  });
+</script>
+
+</body>
+</html>
