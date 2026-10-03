@@ -1,108 +1,2524 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#2b160f" />
-  <meta name="description" content="Vijaya Cake Palace & Bakery — cakes, pastries, snacks, bakery items and party hall." />
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Vijaya Cake Palace & Bakery - Cakes, pastries, snacks, bakery items and party hall at Siddheshwar Nagar, Unkal Cross, Hubli."
+  >
+
   <title>Vijaya Cake Palace & Bakery</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <style>
-    :root{--brown:#2b160f;--brown2:#3a2118;--cream:#f8f1e5;--paper:#fffaf1;--gold:#c49a48;--gold-light:#e7c981;--ink:#28170f;--muted:#75685c;--line:#e6d9c5}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif} a{color:inherit;text-decoration:none} button,input,select,textarea{font:inherit}
-    .wrap{width:min(1160px,calc(100% - 40px));margin:auto}.topline{height:4px;background:linear-gradient(90deg,var(--gold),#f2dca0,var(--gold))}
-    header{position:sticky;top:0;z-index:10;background:rgba(43,22,15,.97);backdrop-filter:blur(12px);color:var(--cream);border-bottom:1px solid rgba(231,201,129,.2)}
-    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;min-width:0}.brand-mark{width:43px;height:43px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold-light);font-family:"Playfair Display",serif;font-size:22px}.brand-name{font-family:"Playfair Display",serif;font-size:18px;line-height:1.1}.brand-sub{font-size:9px;letter-spacing:3px;color:var(--gold-light);margin-top:5px}.navlinks{display:flex;align-items:center;gap:27px;font-size:12px;letter-spacing:.08em;text-transform:uppercase}.navlinks a{color:#f8f1e5;opacity:.85;transition:.2s}.navlinks a:hover{color:var(--gold-light);opacity:1}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 19px;border-radius:3px;border:1px solid var(--gold);background:var(--gold);color:var(--brown);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;transition:.2s;cursor:pointer}.nav-cta:hover,.btn:hover{background:var(--gold-light);transform:translateY(-1px)}.menu-toggle{display:none;background:transparent;border:1px solid #806344;color:var(--cream);border-radius:3px;padding:9px 11px;font-size:20px}
-    .hero{background:var(--brown);color:var(--cream);position:relative;overflow:hidden;min-height:570px;display:flex;align-items:center}.hero:before{content:"";position:absolute;width:560px;height:560px;border:1px solid rgba(196,154,72,.16);border-radius:50%;right:-130px;top:-100px;box-shadow:0 0 0 35px rgba(196,154,72,.025),0 0 0 75px rgba(196,154,72,.025)}.hero:after{content:"";position:absolute;inset:auto 0 0;height:5px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:50px;padding:70px 0;position:relative;z-index:1}.eyebrow{color:var(--gold-light);font-size:10px;letter-spacing:.28em;text-transform:uppercase;font-weight:700;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:28px;height:1px;background:var(--gold)}h1,h2,h3{font-family:"Playfair Display",serif;font-weight:600}h1{font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-.035em;margin:20px 0 18px;max-width:650px}h1 span{color:var(--gold-light);font-style:italic}.hero-copy{color:#d7cabb;font-size:15px;line-height:1.8;max-width:470px}.hero-actions{display:flex;align-items:center;gap:13px;margin-top:28px;flex-wrap:wrap}.btn-outline{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border:1px solid rgba(248,241,229,.45);color:var(--cream);border-radius:3px;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}.btn-outline:hover{border-color:var(--gold-light);color:var(--gold-light)}.hero-note{font-size:10px;color:#bba995;letter-spacing:.08em;margin-top:28px}
-    .hero-art{position:relative;min-height:365px;display:grid;place-items:center}.art-frame{width:min(100%,420px);aspect-ratio:1/1.02;border:1px solid rgba(231,201,129,.45);padding:12px;position:relative;transform:rotate(1deg)}.art-inner{height:100%;background:radial-gradient(ellipse at 50% 48%,rgba(196,154,72,.24),transparent 47%),linear-gradient(145deg,#553326,#21100b 75%);display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;overflow:hidden}.art-inner:before,.art-inner:after{content:"";position:absolute;width:75%;height:75%;border:1px solid rgba(231,201,129,.18);border-radius:50%}.art-inner:after{width:58%;height:58%}.cake{position:relative;width:190px;height:130px;z-index:1;filter:drop-shadow(0 20px 15px rgba(0,0,0,.35))}.cake-top{position:absolute;top:7px;left:10px;width:170px;height:47px;border-radius:50%;background:linear-gradient(145deg,#f6dfb3,#c99859 70%,#8d512e);border:4px solid #e9c98d}.cake-body{position:absolute;top:29px;left:10px;width:170px;height:74px;background:linear-gradient(90deg,#4c2418,#7b3b25 45%,#3c1b13);border:3px solid #d8ad6a;border-top:0;border-radius:0 0 13px 13px}.cake-body:before{content:"";position:absolute;left:0;right:0;top:20px;height:12px;background:#f4dfb7;box-shadow:0 3px 0 #b77c48}.drip{position:absolute;top:29px;left:20px;width:150px;height:18px;background:#e8c68a;clip-path:polygon(0 0,100% 0,100% 100%,90% 100%,86% 40%,78% 40%,75% 100%,65% 100%,61% 45%,51% 45%,48% 100%,37% 100%,34% 45%,23% 45%,20% 100%,10% 100%,8% 45%,0 45%)}.berry{position:absolute;top:0;left:88px;width:17px;height:19px;background:#9a3429;border-radius:50% 50% 45% 45%;z-index:2;box-shadow:20px 9px 0 -3px #a94332,-20px 10px 0 -4px #a94332}.berry:after{content:"";position:absolute;width:18px;height:8px;background:#5c7b3b;clip-path:polygon(50% 100%,0 0,45% 35%,70% 0,100% 5%);top:-5px;left:0}.cake-caption{z-index:1;color:var(--gold-light);font-family:"Playfair Display",serif;font-style:italic;font-size:17px;margin-top:18px}.spark{position:absolute;color:var(--gold-light);font-size:20px}.s1{top:15%;left:16%}.s2{right:15%;top:28%;font-size:13px}.s3{bottom:15%;right:20%;font-size:24px}
-    section{padding:82px 0}.section-head{text-align:center;max-width:620px;margin:0 auto 38px}.section-head .eyebrow{justify-content:center}.section-head .eyebrow:before{display:none}h2{font-size:clamp(30px,4vw,44px);line-height:1.12;margin:12px 0;color:var(--brown)}.section-head p{color:var(--muted);font-size:14px;line-height:1.7;margin:0}.specialties{background:var(--cream)}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.food-card{background:#fffaf2;border:1px solid #e8dcc9;padding:10px;transition:.25s}.food-card:hover{transform:translateY(-5px);box-shadow:0 15px 30px rgba(43,22,15,.08)}.food-art{height:160px;display:grid;place-items:center;background:linear-gradient(135deg,#ead9bd,#f8efdf);position:relative;overflow:hidden}.food-art .symbol{font-size:62px;filter:drop-shadow(0 8px 5px rgba(43,22,15,.15))}.food-art:after{content:"";position:absolute;width:160px;height:160px;border:1px solid rgba(196,154,72,.35);border-radius:50%}.food-info{padding:15px 9px 10px;text-align:center}.food-info h3{font-size:19px;margin:0 0 5px;color:var(--brown)}.food-info p{font-size:11px;line-height:1.5;color:var(--muted);margin:0}
-    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.about-visual{min-height:360px;background:linear-gradient(135deg,#3a2118,#1f100b);display:grid;place-items:center;position:relative;overflow:hidden;border:10px solid var(--cream);outline:1px solid var(--line)}.about-visual:before{content:"";position:absolute;width:280px;height:280px;border:1px solid rgba(231,201,129,.4);border-radius:50%;box-shadow:0 0 0 25px rgba(231,201,129,.04),0 0 0 50px rgba(231,201,129,.04)}.about-visual .seal{z-index:1;text-align:center;color:var(--cream);font-family:"Playfair Display",serif}.seal .seal-icon{font-size:45px;color:var(--gold-light)}.seal strong{display:block;font-size:27px;font-weight:500}.seal small{display:block;color:var(--gold-light);letter-spacing:4px;font:10px "DM Sans",sans-serif;margin-top:9px}.about-copy .eyebrow{margin-bottom:12px}.about-copy h2{margin:0 0 15px}.about-copy p{font-size:14px;line-height:1.8;color:var(--muted)}.features{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:23px}.feature{display:flex;gap:10px;align-items:center;font-size:12px;font-weight:600}.feature span{color:var(--gold);font-size:18px}
-    .party{background:var(--brown);color:var(--cream);position:relative;overflow:hidden}.party .section-head h2{color:var(--cream)}.party .section-head p{color:#d2c3b3}.party-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.hall-visual{min-height:290px;background:linear-gradient(135deg,#493025,#20100b);border:1px solid rgba(231,201,129,.4);display:grid;place-items:center;position:relative;overflow:hidden}.hall-visual:before{content:"";position:absolute;inset:22px;border:1px solid rgba(231,201,129,.24)}.hall-visual .hall-icon{font-size:76px;color:var(--gold-light);z-index:1}.hall-visual .hall-label{position:absolute;bottom:43px;z-index:1;color:var(--cream);font-family:"Playfair Display",serif;font-size:22px}.party-copy h3{font-size:30px;margin:0 0 12px;color:var(--gold-light)}.party-copy p{color:#d2c3b3;font-size:14px;line-height:1.8}.party-list{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0 25px}.party-list span{border:1px solid rgba(231,201,129,.35);padding:8px 11px;color:#f0e4d1;font-size:11px}
-    .contact{background:var(--cream)}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px}.contact-info{background:var(--brown);color:var(--cream);padding:30px}.contact-info h3{font-size:25px;margin:0 0 10px}.contact-info p{font-size:13px;line-height:1.7;color:#d2c3b3}.contact-line{display:flex;gap:12px;align-items:flex-start;padding:15px 0;border-top:1px solid rgba(231,201,129,.2);font-size:12px}.contact-line b{display:block;color:var(--gold-light);font-size:10px;text-transform:uppercase;letter-spacing:.12em;margin-bottom:4px}.contact-line .ico{color:var(--gold-light);font-size:19px}.form-card{background:#fffaf2;border:1px solid var(--line);padding:30px}.form-card h3{font-size:25px;color:var(--brown);margin:0 0 5px}.form-card>p{font-size:12px;color:var(--muted);margin:0 0 20px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#5c493b}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #dfd2bf;background:#fffdf8;color:var(--ink);border-radius:2px;outline:none;font-size:12px}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}.field textarea{min-height:88px;resize:vertical}.form-note{font-size:10px!important;color:#8b7d70!important;margin-top:12px!important;line-height:1.5}.status{font-size:12px;color:#426b3c;margin-top:10px;min-height:16px}
-    footer{background:#1d0e09;color:#d5c5b2;padding:27px 0}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-brand{font-family:"Playfair Display",serif;color:var(--cream);font-size:16px}.footer-sub{font-size:10px;color:#aa9783;margin-top:4px}.copyright{font-size:10px;color:#aa9783;text-align:right}
-    @media(max-width:850px){.navlinks{gap:14px}.navlinks a{font-size:10px}.hero-grid{gap:25px}.cards{grid-template-columns:repeat(2,1fr)}.about-grid{gap:30px}.contact-grid{gap:20px}}
-    @media(max-width:640px){.wrap{width:min(100% - 30px,520px)}.nav{height:66px}.brand-mark{width:38px;height:38px}.brand-name{font-size:15px}.brand-sub{font-size:8px;letter-spacing:2px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:66px;left:0;right:0;background:var(--brown);padding:12px 20px 20px;flex-direction:column;align-items:stretch;border-bottom:1px solid rgba(231,201,129,.25)}.navlinks.open{display:flex}.navlinks a{padding:11px 5px;border-bottom:1px solid rgba(255,255,255,.08);font-size:11px}.nav-cta{margin-top:7px;text-align:center}.hero{min-height:unset}.hero-grid{grid-template-columns:1fr;gap:15px;padding:60px 0 45px}.hero-copy{font-size:13px}.hero-art{min-height:290px}.art-frame{width:min(82%,330px)}.cake{transform:scale(.82)}.cake-caption{font-size:15px}section{padding:60px 0}.section-head{margin-bottom:27px}.cards{gap:10px}.food-art{height:125px}.food-art .symbol{font-size:48px}.food-info{padding:12px 5px}.food-info h3{font-size:16px}.food-info p{font-size:10px}.about-grid,.party-grid,.contact-grid{grid-template-columns:1fr;gap:28px}.about-visual{min-height:280px}.features{gap:12px}.party-grid{gap:20px}.hall-visual{min-height:240px}.contact-info,.form-card{padding:23px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-inner{flex-direction:column;text-align:center}.copyright{text-align:center}.hero-actions .btn,.hero-actions .btn-outline{flex:1}.hero-note{margin-top:20px}}
-    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+    /* ================================
+       ROOT
+    ================================= */
+
+    :root {
+      --brown: #2b160f;
+      --brown-dark: #1b0d09;
+      --brown-light: #4a281d;
+
+      --cream: #f8f1e5;
+      --cream-light: #fffaf2;
+
+      --gold: #c49a48;
+      --gold-light: #e3c47c;
+
+      --text: #33231c;
+      --muted: #79675d;
+
+      --white: #ffffff;
+
+      --shadow: 0 18px 50px rgba(43, 22, 15, 0.12);
+
+      --radius: 22px;
+    }
+
+
+    /* ================================
+       RESET
+    ================================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      background: var(--cream-light);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+
+    /* ================================
+       COMMON
+    ================================= */
+
+    .container {
+      width: min(1120px, calc(100% - 32px));
+      margin: auto;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-label {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(34px, 5vw, 54px);
+      line-height: 1.1;
+      color: var(--brown);
+      margin-bottom: 18px;
+    }
+
+    .section-text {
+      color: var(--muted);
+      max-width: 650px;
+    }
+
+    .gold-line {
+      width: 60px;
+      height: 2px;
+      background: var(--gold);
+      margin: 22px 0;
+    }
+
+
+    /* ================================
+       HEADER
+    ================================= */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+
+      background: rgba(43, 22, 15, 0.94);
+      backdrop-filter: blur(12px);
+
+      border-bottom: 1px solid rgba(227, 196, 124, 0.18);
+    }
+
+    .nav {
+      min-height: 76px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--cream);
+    }
+
+    .logo-mark {
+      width: 42px;
+      height: 42px;
+
+      display: grid;
+      place-items: center;
+
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+
+      color: var(--gold-light);
+      font-family: "Playfair Display", serif;
+      font-size: 20px;
+    }
+
+    .logo-text strong {
+      display: block;
+      font-family: "Playfair Display", serif;
+      font-size: 17px;
+      line-height: 1.1;
+    }
+
+    .logo-text span {
+      display: block;
+      color: var(--gold-light);
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+
+    nav a {
+      color: #fff8ee;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--gold-light);
+    }
+
+    .nav-button {
+      border: 1px solid var(--gold);
+      padding: 10px 16px;
+      border-radius: 30px;
+      color: var(--gold-light);
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: transparent;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+
+    /* ================================
+       HERO
+    ================================= */
+
+    .hero {
+      min-height: 100vh;
+      background:
+        radial-gradient(
+          circle at 80% 20%,
+          rgba(196, 154, 72, 0.18),
+          transparent 30%
+        ),
+        linear-gradient(
+          135deg,
+          var(--brown-dark),
+          var(--brown)
+        );
+
+      color: white;
+
+      display: flex;
+      align-items: center;
+
+      padding-top: 90px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+
+      width: 450px;
+      height: 450px;
+
+      border: 1px solid rgba(196, 154, 72, 0.16);
+      border-radius: 50%;
+
+      right: -170px;
+      top: 120px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+
+      width: 260px;
+      height: 260px;
+
+      border: 1px solid rgba(196, 154, 72, 0.12);
+      border-radius: 50%;
+
+      right: -70px;
+      top: 215px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+      gap: 50px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-kicker {
+      color: var(--gold-light);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(48px, 7vw, 82px);
+      line-height: 0.98;
+      max-width: 720px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 span {
+      color: var(--gold-light);
+    }
+
+    .hero-description {
+      color: #eadfd5;
+      max-width: 580px;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 48px;
+      padding: 0 22px;
+
+      border-radius: 30px;
+
+      font-weight: 700;
+      font-size: 14px;
+
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--brown-dark);
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      background: var(--gold-light);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.45);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+
+    .hero-note {
+      margin-top: 28px;
+      font-size: 12px;
+      color: #bfaea2;
+    }
+
+
+    /* ================================
+       CAKE ART
+    ================================= */
+
+    .cake-display {
+      min-height: 450px;
+
+      display: grid;
+      place-items: center;
+
+      position: relative;
+    }
+
+    .cake-glow {
+      position: absolute;
+
+      width: 330px;
+      height: 330px;
+
+      background: rgba(196, 154, 72, 0.12);
+      filter: blur(20px);
+      border-radius: 50%;
+    }
+
+    .cake {
+      width: min(340px, 80vw);
+      position: relative;
+      z-index: 2;
+    }
+
+    .cake-top {
+      width: 82%;
+      height: 105px;
+
+      margin: auto;
+
+      background:
+        linear-gradient(
+          145deg,
+          #fff7e9,
+          #e8cdb0
+        );
+
+      border-radius: 50% 50% 38% 38%;
+
+      border: 4px solid #d8b486;
+
+      position: relative;
+      z-index: 3;
+
+      box-shadow:
+        0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .cake-top::before {
+      content: "VIJAYA";
+
+      position: absolute;
+
+      left: 50%;
+      top: 42%;
+
+      transform: translate(-50%, -50%);
+
+      font-family: "Playfair Display", serif;
+
+      font-size: 22px;
+      font-weight: 700;
+
+      color: var(--brown);
+      letter-spacing: 2px;
+    }
+
+    .cake-layer {
+      width: 82%;
+      height: 105px;
+
+      margin: -12px auto 0;
+
+      background:
+        linear-gradient(
+          90deg,
+          #6e3825,
+          #9c5b38,
+          #6e3825
+        );
+
+      border-radius: 12px 12px 25px 25px;
+
+      border: 3px solid #522719;
+
+      position: relative;
+      z-index: 2;
+    }
+
+    .cake-layer::before {
+      content: "";
+
+      position: absolute;
+
+      left: 5%;
+      right: 5%;
+      top: -12px;
+
+      height: 28px;
+
+      background: #fff1dc;
+
+      border-radius: 50%;
+    }
+
+    .cake-bottom {
+      width: 90%;
+      height: 100px;
+
+      margin: -8px auto 0;
+
+      background:
+        linear-gradient(
+          90deg,
+          #4c2418,
+          #7b4029,
+          #4c2418
+        );
+
+      border-radius: 15px 15px 25px 25px;
+
+      border: 3px solid #3c1b12;
+    }
+
+    .cherry {
+      position: absolute;
+
+      width: 17px;
+      height: 17px;
+
+      background: #9d2930;
+      border-radius: 50%;
+
+      box-shadow:
+        35px 8px 0 #9d2930,
+        -38px 9px 0 #9d2930;
+    }
+
+    .cherry.one {
+      top: 16px;
+      left: 46%;
+    }
+
+
+    /* ================================
+       TRUST STRIP
+    ================================= */
+
+    .trust {
+      background: var(--cream);
+      border-bottom: 1px solid #eadcca;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+
+      background: #dfcfbd;
+    }
+
+    .trust-item {
+      background: var(--cream);
+      padding: 25px 15px;
+      text-align: center;
+    }
+
+    .trust-item strong {
+      display: block;
+      font-family: "Playfair Display", serif;
+      font-size: 20px;
+      color: var(--brown);
+    }
+
+    .trust-item span {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+
+    /* ================================
+       MENU
+    ================================= */
+
+    .menu-section {
+      background: var(--cream-light);
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-heading .section-text {
+      margin: auto;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .menu-card {
+      background: white;
+      border: 1px solid #eadfd4;
+      border-radius: var(--radius);
+      padding: 30px 22px;
+      box-shadow: 0 8px 30px rgba(43, 22, 15, 0.05);
+      transition: 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .menu-icon {
+      width: 58px;
+      height: 58px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 18px;
+
+      background: var(--cream);
+      color: var(--brown);
+
+      font-size: 28px;
+
+      margin-bottom: 20px;
+    }
+
+    .menu-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 23px;
+      color: var(--brown);
+      margin-bottom: 8px;
+    }
+
+    .menu-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .menu-card .card-line {
+      width: 35px;
+      height: 2px;
+      background: var(--gold);
+      margin-top: 18px;
+    }
+
+
+    /* ================================
+       ABOUT
+    ================================= */
+
+    .about {
+      background: var(--brown);
+      color: white;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-visual {
+      min-height: 440px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #4b291e,
+          #24110b
+        );
+
+      border: 1px solid rgba(196,154,72,0.35);
+
+      border-radius: 30px;
+
+      display: grid;
+      place-items: center;
+
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-visual::before,
+    .about-visual::after {
+      content: "";
+      position: absolute;
+
+      border: 1px solid rgba(196,154,72,0.25);
+      border-radius: 50%;
+    }
+
+    .about-visual::before {
+      width: 280px;
+      height: 280px;
+    }
+
+    .about-visual::after {
+      width: 430px;
+      height: 430px;
+    }
+
+    .about-badge {
+      position: relative;
+      z-index: 2;
+
+      width: 180px;
+      height: 180px;
+
+      border: 1px solid var(--gold);
+
+      border-radius: 50%;
+
+      display: grid;
+      place-items: center;
+
+      text-align: center;
+
+      padding: 20px;
+    }
+
+    .about-badge strong {
+      font-family: "Playfair Display", serif;
+      color: var(--gold-light);
+      font-size: 24px;
+    }
+
+    .about-badge span {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: #e8dbce;
+      text-transform: uppercase;
+      margin-top: 5px;
+    }
+
+    .about .section-label {
+      color: var(--gold-light);
+    }
+
+    .about .section-title {
+      color: white;
+    }
+
+    .about .section-text {
+      color: #d8c8bd;
+    }
+
+    .about-points {
+      margin-top: 28px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .about-point {
+      border-left: 2px solid var(--gold);
+      padding-left: 15px;
+    }
+
+    .about-point strong {
+      display: block;
+      color: white;
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    .about-point span {
+      color: #bca99e;
+      font-size: 12px;
+    }
+
+
+    /* ================================
+       PARTY HALL
+    ================================= */
+
+    .party {
+      background: var(--cream);
+    }
+
+    .party-box {
+      background:
+        linear-gradient(
+          135deg,
+          var(--brown),
+          #4b281c
+        );
+
+      border-radius: 30px;
+
+      padding: 55px;
+
+      color: white;
+
+      display: grid;
+      grid-template-columns: 1fr 0.8fr;
+
+      gap: 45px;
+
+      position: relative;
+      overflow: hidden;
+    }
+
+    .party-box::after {
+      content: "CELEBRATE";
+
+      position: absolute;
+
+      right: -35px;
+      bottom: 20px;
+
+      font-family: "Playfair Display", serif;
+
+      font-size: 90px;
+
+      color: rgba(255,255,255,0.035);
+
+      transform: rotate(-10deg);
+    }
+
+    .party .section-label {
+      color: var(--gold-light);
+    }
+
+    .party h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(35px, 5vw, 55px);
+      line-height: 1.05;
+      margin-bottom: 18px;
+    }
+
+    .party p {
+      color: #dfd1c7;
+      max-width: 600px;
+    }
+
+    .party-features {
+      margin-top: 28px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      gap: 12px;
+    }
+
+    .party-feature {
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 15px;
+      border-radius: 14px;
+      font-size: 13px;
+      color: #eaded6;
+    }
+
+    .party-feature strong {
+      display: block;
+      color: var(--gold-light);
+      margin-bottom: 3px;
+    }
+
+    .party-card {
+      min-height: 260px;
+
+      border: 1px solid rgba(196,154,72,0.5);
+      border-radius: 24px;
+
+      display: grid;
+      place-items: center;
+
+      text-align: center;
+
+      position: relative;
+      z-index: 2;
+
+      padding: 25px;
+    }
+
+    .party-card .party-icon {
+      font-size: 58px;
+      margin-bottom: 12px;
+    }
+
+    .party-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      color: var(--gold-light);
+    }
+
+
+    /* ================================
+       GALLERY PLACEHOLDERS
+    ================================= */
+
+    .gallery {
+      background: var(--cream-light);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      grid-template-rows: 220px 220px;
+      gap: 14px;
+    }
+
+    .gallery-item {
+      border-radius: 20px;
+      overflow: hidden;
+
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(196,154,72,0.22),
+          transparent 55%
+        ),
+        linear-gradient(
+          145deg,
+          #4a281d,
+          #21100b
+        );
+
+      border: 1px solid #d9c4ad;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+
+      padding: 20px;
+
+      color: #f7eadb;
+
+      position: relative;
+    }
+
+    .gallery-item:first-child {
+      grid-row: span 2;
+    }
+
+    .gallery-content strong {
+      display: block;
+      font-family: "Playfair Display", serif;
+      font-size: 25px;
+      color: var(--gold-light);
+      margin-bottom: 5px;
+    }
+
+    .gallery-content span {
+      font-size: 12px;
+      color: #d9c8bb;
+    }
+
+
+    /* ================================
+       CONTACT
+    ================================= */
+
+    .contact {
+      background: var(--cream);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 35px;
+      align-items: start;
+    }
+
+    .contact-info {
+      background: var(--brown);
+      color: white;
+
+      border-radius: 25px;
+
+      padding: 35px;
+    }
+
+    .contact-info h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .contact-detail {
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .contact-detail:last-child {
+      border-bottom: 0;
+    }
+
+    .contact-detail small {
+      display: block;
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 10px;
+      margin-bottom: 5px;
+    }
+
+    .contact-detail p {
+      color: #eadfd5;
+      font-size: 14px;
+    }
+
+    .number-placeholder {
+      color: #bca99e !important;
+      font-style: italic;
+    }
+
+    .contact-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .disabled-btn {
+      opacity: 0.45;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    .contact-form {
+      background: white;
+
+      border: 1px solid #e8dbcd;
+
+      border-radius: 25px;
+
+      padding: 35px;
+
+      box-shadow: 0 12px 40px rgba(43,22,15,0.06);
+    }
+
+    .contact-form h3 {
+      font-family: "Playfair Display", serif;
+      color: var(--brown);
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .form-note {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    .field label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--brown);
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+
+      border: 1px solid #ded0c2;
+
+      background: #fffdf9;
+
+      color: var(--text);
+
+      border-radius: 12px;
+
+      padding: 13px 14px;
+
+      outline: none;
+
+      transition: 0.2s;
+    }
+
+    .field textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(196,154,72,0.12);
+    }
+
+    .form-submit {
+      width: 100%;
+      margin-top: 18px;
+      border: 0;
+    }
+
+    .form-status {
+      margin-top: 15px;
+      font-size: 13px;
+      color: var(--brown);
+      display: none;
+    }
+
+
+    /* ================================
+       FOOTER
+    ================================= */
+
+    footer {
+      background: var(--brown-dark);
+      color: #d9c8bb;
+      padding: 45px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 0.8fr;
+      gap: 40px;
+      padding-bottom: 35px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    footer h3 {
+      font-family: "Playfair Display", serif;
+      color: white;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    footer p {
+      font-size: 13px;
+      color: #bca99e;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: #cdbdb2;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 22px;
+      font-size: 11px;
+      color: #927f73;
+    }
+
+
+    /* ================================
+       FLOATING BUTTON
+    ================================= */
+
+    .top-button {
+      position: fixed;
+
+      right: 18px;
+      bottom: 18px;
+
+      width: 45px;
+      height: 45px;
+
+      border-radius: 50%;
+
+      display: grid;
+      place-items: center;
+
+      background: var(--gold);
+      color: var(--brown-dark);
+
+      font-weight: 900;
+
+      box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+
+      opacity: 0;
+      visibility: hidden;
+
+      transition: 0.3s;
+
+      z-index: 900;
+    }
+
+    .top-button.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    /* ================================
+       ANIMATION
+    ================================= */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+    /* ================================
+       MOBILE
+    ================================= */
+
+    @media (max-width: 900px) {
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid,
+      .party-box {
+        grid-template-columns: 1fr;
+      }
+
+      .menu-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero {
+        padding-top: 120px;
+        padding-bottom: 70px;
+      }
+
+      .cake-display {
+        min-height: 350px;
+      }
+
+      .party-box {
+        padding: 35px 25px;
+      }
+    }
+
+
+    @media (max-width: 700px) {
+
+      .container {
+        width: min(100% - 24px, 1120px);
+      }
+
+      .section {
+        padding: 65px 0;
+      }
+
+      nav {
+        display: none;
+
+        position: absolute;
+
+        top: 76px;
+        left: 12px;
+        right: 12px;
+
+        background: var(--brown);
+
+        border: 1px solid rgba(196,154,72,0.25);
+
+        border-radius: 18px;
+
+        padding: 15px;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 3px;
+      }
+
+      nav.open {
+        display: flex;
+      }
+
+      nav a {
+        padding: 12px;
+        border-radius: 10px;
+      }
+
+      nav a:hover {
+        background: rgba(255,255,255,0.05);
+      }
+
+      .nav-button {
+        text-align: center;
+        margin-top: 5px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .logo-text strong {
+        font-size: 15px;
+      }
+
+      .logo-text span {
+        font-size: 8px;
+      }
+
+      .hero h1 {
+        font-size: 52px;
+      }
+
+      .hero-description {
+        font-size: 15px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .menu-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .about-points {
+        grid-template-columns: 1fr;
+      }
+
+      .party-features {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 180px);
+      }
+
+      .gallery-item:first-child {
+        grid-column: 1 / -1;
+        grid-row: auto;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .field.full {
+        grid-column: auto;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-form,
+      .contact-info {
+        padding: 25px;
+      }
+
+      .section-title {
+        font-size: 38px;
+      }
+    }
+
+
+    @media (max-width: 420px) {
+
+      .hero h1 {
+        font-size: 45px;
+      }
+
+      .logo-mark {
+        width: 37px;
+        height: 37px;
+      }
+
+      .logo-text strong {
+        font-size: 13px;
+      }
+
+      .trust-item strong {
+        font-size: 17px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 170px);
+      }
+
+      .gallery-item:first-child {
+        grid-column: auto;
+      }
+    }
+
   </style>
 </head>
+
+
 <body>
-  <div class="topline"></div>
+
+  <!-- =================================
+       HEADER
+  ================================== -->
+
   <header>
-    <div class="wrap nav">
-      <a class="brand" href="#home" aria-label="Vijaya Cake Palace home">
-        <span class="brand-mark">V</span>
-        <span><span class="brand-name">Vijaya Cake Palace</span><span class="brand-sub"> & BAKERY</span></span>
+
+    <div class="container nav">
+
+      <a href="#home" class="logo">
+
+        <div class="logo-mark">
+          V
+        </div>
+
+        <div class="logo-text">
+          <strong>Vijaya Cake Palace</strong>
+          <span>& Bakery</span>
+        </div>
+
       </a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-      <nav class="navlinks" id="navLinks" aria-label="Main navigation">
-        <a href="#home">Home</a><a href="#menu">Our Menu</a><a href="#about">About</a><a href="#party">Party Hall</a><a href="#contact">Contact</a>
-        <a class="nav-cta" href="#contact">Enquire Now</a>
+
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open menu"
+      >
+        ☰
+      </button>
+
+
+      <nav id="navMenu">
+
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#party">Party Hall</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="nav-button">
+          Enquiry
+        </a>
+
       </nav>
+
     </div>
+
   </header>
 
+
+  <!-- =================================
+       HERO
+  ================================== -->
+
   <main>
+
     <section class="hero" id="home">
-      <div class="wrap hero-grid">
-        <div>
-          <div class="eyebrow">A little sweetness, every day</div>
-          <h1>Made with love.<br><span>Served with joy.</span></h1>
-          <p class="hero-copy">From delicious cakes and fresh pastries to tasty snacks and special celebrations, make every moment a little more memorable with us.</p>
-          <div class="hero-actions"><a class="btn" href="#menu">Explore our menu <span>↗</span></a><a class="btn-outline" href="#party">Discover party hall</a></div>
-          <div class="hero-note">CAKES &nbsp; • &nbsp; PASTRIES &nbsp; • &nbsp; SNACKS &nbsp; • &nbsp; CELEBRATIONS</div>
-        </div>
-        <div class="hero-art" aria-label="Decorative cake illustration">
-          <div class="art-frame"><div class="art-inner"><span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">✦</span><div class="cake"><div class="berry"></div><div class="cake-top"></div><div class="cake-body"></div><div class="drip"></div></div><div class="cake-caption">A slice of happiness</div></div></div>
-        </div>
-      </div>
-    </section>
 
-    <section class="specialties" id="menu">
-      <div class="wrap">
-        <div class="section-head"><div class="eyebrow">Made for every craving</div><h2>Our Sweet & Savoury Selection</h2><p>Discover something special for every mood, every gathering and every little celebration.</p></div>
-        <div class="cards">
-          <article class="food-card"><div class="food-art"><span class="symbol">🎂</span></div><div class="food-info"><h3>Cakes</h3><p>Celebrate life's sweetest moments.</p></div></article>
-          <article class="food-card"><div class="food-art"><span class="symbol">🧁</span></div><div class="food-info"><h3>Pastries</h3><p>A delightful treat in every bite.</p></div></article>
-          <article class="food-card"><div class="food-art"><span class="symbol">🥐</span></div><div class="food-info"><h3>Snacks</h3><p>Perfect for a quick and tasty break.</p></div></article>
-          <article class="food-card"><div class="food-art"><span class="symbol">🍪</span></div><div class="food-info"><h3>Bakery Items</h3><p>Everyday favourites, all in one place.</p></div></article>
-        </div>
-      </div>
-    </section>
+      <div class="container hero-grid">
 
-    <section id="about">
-      <div class="wrap about-grid">
-        <div class="about-visual"><div class="seal"><div class="seal-icon">♧</div><strong>Vijaya Cake Palace</strong><small> & BAKERY</small></div></div>
-        <div class="about-copy"><div class="eyebrow">A warm welcome</div><h2>A little joy for every occasion.</h2><p>Welcome to Vijaya Cake Palace & Bakery, a place for sweet treats, savoury bites and moments worth celebrating. Whether you're picking up a favourite snack or planning a special gathering, we're happy to be part of it.</p><div class="features"><div class="feature"><span>✦</span> Cakes & pastries</div><div class="feature"><span>✦</span> Tasty snacks</div><div class="feature"><span>✦</span> Bakery favourites</div><div class="feature"><span>✦</span> Party hall</div></div></div>
-      </div>
-    </section>
+        <div class="hero-content reveal">
 
-    <section class="party" id="party">
-      <div class="wrap">
-        <div class="section-head"><div class="eyebrow">Make memories here</div><h2>Celebrate in Our Party Hall</h2><p>A special place to bring people together and make your occasions memorable.</p></div>
-        <div class="party-grid">
-          <div class="hall-visual"><div class="hall-icon">✧</div><div class="hall-label">Your moments, our space</div></div>
-          <div class="party-copy"><h3>Make your moments special.</h3><p>Planning a birthday, family gathering or a special occasion? Get in touch with us to enquire about the party hall and discuss your event.</p><div class="party-list"><span>Birthday celebrations</span><span>Family gatherings</span><span>Special occasions</span></div><a class="btn" href="#contact">Enquire about the hall ↗</a></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="wrap">
-        <div class="section-head"><div class="eyebrow">We'd love to hear from you</div><h2>Visit Us or Send an Enquiry</h2><p>For bakery enquiries or party hall details, leave a message below.</p></div>
-        <div class="contact-grid">
-          <div class="contact-info"><h3>Come say hello.</h3><p>We look forward to welcoming you at Vijaya Cake Palace & Bakery.</p>
-            <div class="contact-line"><span class="ico">⌖</span><div><b>Location</b>Address to be added</div></div>
-            <div class="contact-line"><span class="ico">☎</span><div><b>Phone / WhatsApp</b>Contact number to be added</div></div>
-            <div class="contact-line"><span class="ico">◷</span><div><b>Opening hours</b>Hours to be confirmed</div></div>
+          <div class="hero-kicker">
+            Vijaya Cake Palace & Bakery
           </div>
-          <form class="form-card" id="enquiryForm">
-            <h3>Send an enquiry</h3><p>Tell us what you're looking for and we'll help you with the next steps.</p>
-            <div class="form-grid">
-              <div class="field"><label for="name">Your name</label><input id="name" name="name" placeholder="Enter your name" required></div>
-              <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" placeholder="Your contact number" required></div>
-              <div class="field full"><label for="interest">I'm enquiring about</label><select id="interest" name="interest"><option>Bakery / food enquiry</option><option>Party hall booking</option><option>General enquiry</option></select></div>
-              <div class="field full"><label for="message">Message</label><textarea id="message" name="message" placeholder="Share your requirements (event date, cake details, etc.)"></textarea></div>
-              <div class="field full"><button class=
+
+          <h1>
+            Made with love.
+            <span>Served with joy.</span>
+          </h1>
+
+          <p class="hero-description">
+            Fresh cakes, pastries, snacks and bakery favourites —
+            along with a party hall for your special celebrations.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#menu" class="btn btn-gold">
+              Explore Our Menu
+            </a>
+
+            <a href="#party" class="btn btn-outline">
+              View Party Hall
+            </a>
+
+          </div>
+
+          <p class="hero-note">
+            Siddheshwar Nagar · Unkal Cross · Hubli
+          </p>
+
+        </div>
+
+
+        <div class="cake-display reveal">
+
+          <div class="cake-glow"></div>
+
+          <div class="cake">
+
+            <div class="cake-top">
+
+              <div class="cherry one"></div>
+
+            </div>
+
+            <div class="cake-layer"></div>
+
+            <div class="cake-bottom"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================
+         TRUST STRIP
+    ================================== -->
+
+    <section class="trust">
+
+      <div class="container trust-grid">
+
+        <div class="trust-item">
+          <strong>Cakes</strong>
+          <span>Celebration favourites</span>
+        </div>
+
+        <div class="trust-item">
+          <strong>Pastries</strong>
+          <span>Sweet little treats</span>
+        </div>
+
+        <div class="trust-item">
+          <strong>Bakery</strong>
+          <span>Fresh bakery items</span>
+        </div>
+
+        <div class="trust-item">
+          <strong>Party Hall</strong>
+          <span>Celebrate together</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================
+         MENU
+    ================================== -->
+
+    <section class="section menu-section" id="menu">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <div class="section-label">
+            Our Selection
+          </div>
+
+          <h2 class="section-title">
+            Something for every craving.
+          </h2>
+
+          <p class="section-text">
+            Explore our bakery categories and discover
+            something delicious for every occasion.
+          </p>
+
+        </div>
+
+
+        <div class="menu-grid">
+
+          <article class="menu-card reveal">
+
+            <div class="menu-icon">
+              🎂
+            </div>
+
+            <h3>Cakes</h3>
+
+            <p>
+              Beautiful cakes for birthdays,
+              celebrations and special moments.
+            </p>
+
+            <div class="card-line"></div>
+
+          </article>
+
+
+          <article class="menu-card reveal">
+
+            <div class="menu-icon">
+              🧁
+            </div>
+
+            <h3>Pastries</h3>
+
+            <p>
+              Soft, sweet and delicious pastries
+              for a quick treat.
+            </p>
+
+            <div class="card-line"></div>
+
+          </article>
+
+
+          <article class="menu-card reveal">
+
+            <div class="menu-icon">
+              🥐
+            </div>
+
+            <h3>Snacks</h3>
+
+            <p>
+              Tasty bakery snacks for tea time,
+              evening cravings and more.
+            </p>
+
+            <div class="card-line"></div>
+
+          </article>
+
+
+          <article class="menu-card reveal">
+
+            <div class="menu-icon">
+              🍞
+            </div>
+
+            <h3>Bakery Items</h3>
+
+            <p>
+              Everyday bakery favourites made
+              for sharing and enjoying.
+            </p>
+
+            <div class="card-line"></div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================
+         ABOUT
+    ================================== -->
+
+    <section class="section about" id="about">
+
+      <div class="container about-grid">
+
+        <div class="about-visual reveal">
+
+          <div class="about-badge">
+
+            <div>
+
+              <strong>
+                Vijaya
+              </strong>
+
+              <span>
+                Cake Palace & Bakery
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="reveal">
+
+          <div class="section-label">
+            About Us
+          </div>
+
+          <h2 class="section-title">
+            A place for sweet moments.
+          </h2>
+
+          <div class="gold-line"></div>
+
+          <p class="section-text">
+            Vijaya Cake Palace & Bakery is a local destination
+            for cakes, pastries, snacks and bakery favourites
+            in Siddheshwar Nagar, Unkal Cross, Hubli.
+          </p>
+
+          <p
+            class="section-text"
+            style="margin-top:16px;"
+          >
+            Whether you are celebrating a birthday,
+            gathering with family or simply looking
+            for something delicious, we are here
+            to make the moment special.
+          </p>
+
+
+          <div class="about-points">
+
+            <div class="about-point">
+
+              <strong>
+                Celebration Cakes
+              </strong>
+
+              <span>
+                Cakes for memorable occasions.
+              </span>
+
+            </div>
+
+
+            <div class="about-point">
+
+              <strong>
+                Bakery Favourites
+              </strong>
+
+              <span>
+                Snacks, pastries and bakery treats.
+              </span>
+
+            </div>
+
+
+            <div class="about-point">
+
+              <strong>
+                Party Hall
+              </strong>
+
+              <span>
+                A space for your special gatherings.
+              </span>
+
+            </div>
+
+
+            <div class="about-point">
+
+              <strong>
+                Local & Convenient
+              </strong>
+
+              <span>
+                Located at Unkal Cross, Hubli.
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================
+         PARTY HALL
+    ================================== -->
+
+    <section class="section party" id="party">
+
+      <div class="container">
+
+        <div class="party-box reveal">
+
+          <div>
+
+            <div class="section-label">
+              Celebrate With Us
+            </div>
+
+            <h2>
+              Your celebration deserves its own space.
+            </h2>
+
+            <p>
+              Vijaya Cake Palace & Bakery also has a
+              party hall for celebrations and gatherings.
+              Contact us to enquire about your event.
+            </p>
+
+
+            <div class="party-features">
+
+              <div class="party-feature">
+                <strong>Birthdays</strong>
+                Special moments with family and friends.
+              </div>
+
+              <div class="party-feature">
+                <strong>Family Events</strong>
+                Gather together and celebrate.
+              </div>
+
+              <div class="party-feature">
+                <strong>Special Occasions</strong>
+                Make your important day memorable.
+              </div>
+
+              <div class="party-feature">
+                <strong>Enquiries</strong>
+                Contact us for party hall details.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="party-card">
+
+            <div>
+
+              <div class="party-icon">
+                ✨
+              </div>
+
+              <h3>
+                Party Hall
+              </h3>
+
+              <p style="margin-top:8px;">
+                Celebrate. Create memories.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================
+         GALLERY
+    ================================== -->
+
+    <section class="section gallery" id="gallery">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <div class="section-label">
+            Gallery
+          </div>
+
+          <h2 class="section-title">
+            A taste of Vijaya.
+          </h2>
+
+          <p class="section-text">
+            Bakery and party hall photos will be added here.
+          </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item reveal">
+
+            <div class="gallery-content">
+
+              <strong>
+                Bakery
+              </strong>
+
+              <span>
+                Photo coming soon
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="gallery-item reveal">
+
+            <div class="gallery-content">
+
+              <strong>
+                Cakes
+              </strong>
+
+              <span>
+                Photo coming soon
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="gallery-item reveal">
+
+            <div class="gallery-content">
+
+              <strong>
+                Pastries
+              </strong>
+
+              <span>
+                Photo coming soon
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="gallery-item reveal">
+
+            <div class="gallery-content">
+
+              <strong>
+                Snacks
+              </strong>
+
+              <span>
+                Photo coming soon
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="gallery-item reveal">
+
+            <div class="gallery-content">
+
+              <strong>
+                Party Hall
+              </strong>
+
+              <span>
+                Photo coming soon
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================
+         CONTACT
+    ================================== -->
+
+    <section class="section contact" id="contact">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <div class="section-label">
+            Contact
+          </div>
+
+          <h2 class="section-title">
+            Let's plan something delicious.
+          </h2>
+
+          <p class="section-text">
+            Send an enquiry for cakes, bakery items
+            or the party hall.
+          </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+          <!-- CONTACT INFO -->
+
+          <div class="contact-info reveal">
+
+            <h3>
+              Visit Vijaya
+            </h3>
+
+
+            <div class="contact-detail">
+
+              <small>
+                Address
+              </small>
+
+              <p>
+                Siddheshwar Nagar,<br>
+                Unkal Cross,<br>
+                Hubli, Karnataka
+              </p>
+
+            </div>
+
+
+            <div class="contact-detail">
+
+              <small>
+                Phone / WhatsApp
+              </small>
+
+              <p class="number-placeholder">
+                Number will be added soon.
+              </p>
+
+            </div>
+
+
+            <div class="contact-detail">
+
+              <small>
+                Services
+              </small>
+
+              <p>
+                Cakes · Pastries · Snacks · Bakery Items
+                · Party Hall
+              </p>
+
+            </div>
+
+
+            <div class="contact-buttons">
+
+              <!--
+                PHONE & WHATSAPP ARE DISABLED
+                UNTIL THE REAL NUMBER IS PROVIDED.
+              -->
+
+              <span class="btn btn-outline disabled-btn">
+                Call
+              </span>
+
+              <span class="btn btn-outline disabled-btn">
+                WhatsApp
+              </span>
+
+
+              <a
+                class="btn btn-gold"
+                href="https://www.google.com/maps/search/?api=1&query=Siddheshwar+Nagar+Unkal+Cross+Hubli+Karnataka"
+                target="_blank"
+                rel="noopener"
+              >
+                Open Map
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- ENQUIRY FORM -->
+
+          <div class="contact-form reveal">
+
+            <h3>
+              Send an Enquiry
+            </h3>
+
+            <p class="form-note">
+              Fill in the details below. The website will
+              prepare your enquiry so you can copy it.
+            </p>
+
+
+            <form id="enquiryForm">
+
+              <div class="form-grid">
+
+
+                <div class="field">
+
+                  <label for="name">
+                    Your Name
+                  </label>
+
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                  >
+
+                </div>
+
+
+                <div class="field">
+
+                  <label for="phone">
+                    Your Phone
+                  </label>
+
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter phone number"
+                    required
+                  >
+
+                </div>
+
+
+                <div class="field full">
+
+                  <label for="enquiryType">
+                    Enquiry For
+                  </label>
+
+                  <select
+                    id="enquiryType"
+                    required
+                  >
+
+                    <option value="">
+                      Select an option
+                    </option>
+
+                    <option value="Cake">
+                      Cake
+                    </option>
+
+                    <option value="Pastry">
+                      Pastry
+                    </option>
+
+                    <option value="Bakery Items">
+                      Bakery Items
+                    </option>
+
+                    <option value="Party Hall">
+                      Party Hall
+                    </option>
+
+                    <option value="Other">
+                      Other
+                    </option>
+
+                  </select>
+
+                </div>
+
+
+                <div class="field full">
+
+                  <label for="message">
+                    Message
+                  </label>
+
+                  <textarea
+                    id="message"
+                    placeholder="Tell us what you need..."
+                    required
+                  ></textarea>
+
+                </div>
+
+              </div>
+
+
+              <button
+                type="submit"
+                class="btn btn-gold form-submit"
+              >
+                Prepare Enquiry
+              </button>
+
+
+              <div
+                id="formStatus"
+                class="form-status"
+              ></div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =================================
+       FOOTER
+  ================================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+
+        <div>
+
+          <h3>
+            Vijaya Cake Palace
+          </h3>
+
+          <p>
+            Cakes, pastries, snacks, bakery items
+            and a party hall for your celebrations.
+          </p>
+
+          <p style="margin-top:10px;">
+            Siddheshwar Nagar, Unkal Cross, Hubli.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Explore
+          </h3>
+
+          <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#party">Party Hall</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Visit
+          </h3>
+
+          <div class="footer-links">
+
+            <a href="#contact">
+              Siddheshwar Nagar
+            </a>
+
+            <a href="#contact">
+              Unkal Cross
+            </a>
+
+            <a href="#contact">
+              Hubli, Karnataka
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        © <span id="year"></span>
+        Vijaya Cake Palace & Bakery.
+        All rights reserved.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =================================
+       BACK TO TOP
+  ================================== -->
+
+  <a
+    href="#home"
+    class="top-button"
+    id="topButton"
+    aria-label="Back to top"
+  >
+    ↑
+  </a>
+
+
+  <!-- =================================
+       JAVASCRIPT
+  ================================== -->
+
+  <script>
+
+    /* ================================
+       MOBILE MENU
+    ================================= */
+
+    const menuToggle =
+      document.getElementById("menuToggle");
+
+    const navMenu =
+      document.getElementById("navMenu");
+
+
+    menuToggle.addEventListener("click", () => {
+
+      navMenu.classList.toggle("open");
+
+    });
+
+
+    /* Close menu after clicking a link */
+
+    document
+      .querySelectorAll("#navMenu a")
+      .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+          navMenu.classList.remove("open");
+
+        });
+
+      });
+
+
+    /* ================================
+       YEAR
+    ================================= */
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+
+    /* ================================
+       SCROLL REVEAL
+    ================================= */
+
+    const revealElements =
+      document.querySelectorAll(".reveal");
+
+
+    const revealObserver =
+      new IntersectionObserver(
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add("visible");
+
+              revealObserver.unobserve(entry.target);
+
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.12
+        }
+      );
+
+
+    revealElements.forEach(element => {
+
+      revealObserver.observe(element);
+
+    });
+
+
+    /* ================================
+       BACK TO TOP
+    ================================= */
+
+    const topButton =
+      document.getElementById("topButton");
+
+
+    window.addEventListener("scroll", () => {
+
+      if (window.scrollY > 500) {
+
+        topButton.classList.add("show");
+
+      } else {
+
+        topButton.classList.remove("show");
+
+      }
+
+    });
+
+
+    /* ================================
+       ENQUIRY FORM
+    ================================= */
+
+    const enquiryForm =
+      document.getElementById("enquiryForm");
+
+    const formStatus =
+      document.getElementById("formStatus");
+
+
+    enquiryForm.addEventListener("submit", async function(event) {
+
+      event.preventDefault();
+
+
+      const name =
+        document.getElementById("name").value.trim();
+
+      const phone =
+        document.getElementById("phone").value.trim();
+
+      const enquiryType =
+        document.getElementById("enquiryType").value;
+
+      const message =
+        document.getElementById("message").value.trim();
+
+
+      const enquiryText =
+`Vijaya Cake Palace & Bakery Enquiry
+
+Name: ${name}
+Phone: ${phone}
+Enquiry For: ${enquiryType}
+
+Message:
+${message}
+
+Location:
+Siddheshwar Nagar, Unkal Cross, Hubli, Karnataka`;
+
+
+      try {
+
+        await navigator.clipboard.writeText(enquiryText);
+
+        formStatus.style.display = "block";
+
+        formStatus.textContent =
+          "Enquiry copied successfully. You can now paste it into WhatsApp or any messaging app.";
+
+      } catch (error) {
+
+        formStatus.style.display = "block";
+
+        formStatus.textContent =
+          "Your enquiry is ready. Please copy the details manually and send them to the bakery.";
+
+      }
+
+    });
+
+  </script>
+
+</body>
+</html>
