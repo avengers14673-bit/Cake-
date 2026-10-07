@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Vijaya Cake Palace & Bakery | Hubli</title>
-  <meta name="description" content="Vijaya Cake Palace & Bakery, Siddheshwar Nagar, Unkal Cross, Hubli. Cakes, pastries and bakery items made for every special moment.">
+  <meta name="description" content="Vijaya Cake Palace & Bakery, Siddheshwar Nagar, Unkal Cross, Hubli. Cakes, pastries, bakery items and party hall for every special moment.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -487,6 +487,81 @@
       font-size: 12px;
     }
 
+    /* ================= PARTY HALL ================= */
+
+    .party-hall {
+      background: var(--cream);
+    }
+
+    .party-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .party-image {
+      overflow: hidden;
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      background: white;
+    }
+
+    .party-image img {
+      height: 500px;
+      object-fit: cover;
+      transition: transform .5s ease;
+    }
+
+    .party-image:hover img {
+      transform: scale(1.03);
+    }
+
+    .party-content .eyebrow {
+      color: var(--gold);
+    }
+
+    .party-content h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(42px, 5vw, 60px);
+      line-height: .95;
+      color: var(--brown-900);
+      margin-bottom: 20px;
+    }
+
+    .party-content p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+      margin-bottom: 22px;
+    }
+
+    .party-points {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    .party-point {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    .party-point span {
+      color: var(--gold);
+      font-weight: 800;
+    }
+
+    .party-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
     /* ================= LOCATION ================= */
 
     .location {
@@ -587,6 +662,11 @@
     .map-btn {
       background: var(--gold);
       color: var(--brown-950);
+    }
+
+    .instagram-btn {
+      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+      color: white;
     }
 
     .contact-details {
@@ -790,12 +870,17 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .about-grid {
+      .about-grid,
+      .party-grid {
         grid-template-columns: 1fr;
       }
 
       .about-image img {
         height: 350px;
+      }
+
+      .party-image img {
+        height: 400px;
       }
 
       .footer-grid {
@@ -850,6 +935,18 @@
 
       .product-image {
         height: 245px;
+      }
+
+      .party-image img {
+        height: 330px;
+      }
+
+      .party-buttons {
+        flex-direction: column;
+      }
+
+      .party-buttons .btn {
+        width: 100%;
       }
 
       .location-card {
@@ -930,6 +1027,7 @@
       <a href="#home">Home</a>
       <a href="#cakes">Cakes</a>
       <a href="#bakery">Bakery</a>
+      <a href="#party-hall">Party Hall</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -1056,15 +1154,8 @@
         <div class="category-overlay">
           <h3>Bakery</h3>
           <p>Fresh bakery favourites for everyday moments.</p>
-        </div 
-      
+        </div>
 
-      </a>
-
-
-      
-
-      </a>
       </a>
 
     </div>
@@ -1259,11 +1350,108 @@
         <div class="about-point">
           <span>✓</span>
           Party hall for special occasions
-        </div><a href="#party-hall" class="category-card">
+        </div>
 
-  
+      </div>
 
-</a>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= PARTY HALL ================= -->
+
+<section class="party-hall" id="party-hall">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">Celebrate with us</div>
+
+      <h2>Our Party Hall</h2>
+
+      <p>
+        Make your special moments even more memorable with
+        our party hall at Vijaya Cake Palace & Bakery.
+      </p>
+
+    </div>
+
+
+    <div class="party-grid">
+
+      <div class="party-image">
+
+        <img
+          src="images/party-hall.jpg"
+          alt="Party Hall at Vijaya Cake Palace & Bakery"
+        >
+
+      </div>
+
+
+      <div class="party-content">
+
+        <div class="eyebrow">Special occasions</div>
+
+        <h2>A beautiful place for your celebrations.</h2>
+
+        <p>
+          Celebrate birthdays and special occasions in a
+          comfortable party hall with a festive atmosphere.
+          Make your celebration complete with delicious cakes
+          and bakery favourites from Vijaya Cake Palace & Bakery.
+        </p>
+
+        <div class="party-points">
+
+          <div class="party-point">
+            <span>✓</span>
+            Birthday celebrations
+          </div>
+
+          <div class="party-point">
+            <span>✓</span>
+            Special occasions
+          </div>
+
+          <div class="party-point">
+            <span>✓</span>
+            Celebration bookings
+          </div>
+
+          <div class="party-point">
+            <span>✓</span>
+            Cakes and bakery items for your event
+          </div>
+
+        </div>
+
+        <div class="party-buttons">
+
+          <a
+            href="https://wa.me/917411423433?text=Hello%20Vijaya%20Cake%20Palace%20%26%20Bakery%2C%20I%20would%20like%20to%20enquire%20about%20the%20Party%20Hall."
+            target="_blank"
+            rel="noopener"
+            class="btn btn-gold"
+          >
+            💬 Enquire About Party Hall
+          </a>
+
+          <a
+            href="https://www.instagram.com/vijay_cakepalace/"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-outline"
+            style="border-color: var(--brown-700); color: var(--brown-900);"
+          >
+            📸 Follow on Instagram
+          </a>
+
+        </div>
 
       </div>
 
@@ -1376,6 +1564,15 @@
             💬 WhatsApp / Order Now
           </a>
 
+          <a
+            href="https://www.instagram.com/vijay_cakepalace/"
+            target="_blank"
+            rel="noopener"
+            class="contact-btn instagram-btn"
+          >
+            📸 Instagram @vijay_cakepalace
+          </a>
+
         </div>
 
         <div class="contact-details">
@@ -1393,6 +1590,14 @@
             <div>
               <strong>Orders & Bookings</strong><br>
               Cakes, bakery items & celebrations
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span>📸</span>
+            <div>
+              <strong>Instagram</strong><br>
+              @vijay_cakepalace
             </div>
           </div>
 
@@ -1583,6 +1788,7 @@
 
         <a href="#home">Home</a>
         <a href="#cakes">Cakes</a>
+        <a href="#party-hall">Party Hall</a>
         <a href="#about">About</a>
         <a href="#location">Location</a>
         <a href="#contact">Contact</a>
@@ -1604,6 +1810,14 @@
           rel="noopener"
         >
           💬 WhatsApp
+        </a>
+
+        <a
+          href="https://www.instagram.com/vijay_cakepalace/"
+          target="_blank"
+          rel="noopener"
+        >
+          📸 Instagram
         </a>
 
         <a
